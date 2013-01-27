@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8925F311169880CC005E86CF /* hermit-crab-toys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8925F310169880CC005E86CF /* hermit-crab-toys.jpg */; };
+		8925F31416988105005E86CF /* hermits-2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8925F31316988105005E86CF /* hermits-2.JPG */; };
+		8925F316169881E7005E86CF /* hermit-crab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8925F315169881E7005E86CF /* hermit-crab.jpg */; };
+		8925F31816989295005E86CF /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 8925F31716989295005E86CF /* email.png */; };
+		8925F31A169892C2005E86CF /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8925F319169892C2005E86CF /* home.png */; };
+		8925F31C169892EC005E86CF /* umbrella.png in Resources */ = {isa = PBXBuildFile; fileRef = 8925F31B169892EC005E86CF /* umbrella.png */; };
+		8925F31E16989330005E86CF /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 8925F31D16989330005E86CF /* info.png */; };
+		8925F3201698DB9D005E86CF /* lilhermie.png in Resources */ = {isa = PBXBuildFile; fileRef = 8925F31F1698DB9D005E86CF /* lilhermie.png */; };
+		894C452E16A876C100E1C716 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894C452D16A876C100E1C716 /* SocialViewController.m */; };
+		894C453016A877E400E1C716 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894C452F16A877E400E1C716 /* Social.framework */; };
+		894C453216A8851F00E1C716 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 894C453116A8851F00E1C716 /* Default-568h@2x.png */; };
+		895C5CB416AB252C005BC92E /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C5CB316AB252C005BC92E /* LocationViewController.m */; };
+		895C5CB616AB253E005BC92E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895C5CB516AB253E005BC92E /* MapKit.framework */; };
+		895C5CB816AB2551005BC92E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895C5CB716AB2551005BC92E /* CoreLocation.framework */; };
+		89A9AA81169DB9750023ABDF /* icon_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A9AA80169DB9750023ABDF /* icon_114x114.png */; };
+		89A9AAA9169DDB720023ABDF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A9AAA8169DDB720023ABDF /* MobileCoreServices.framework */; };
+		89A9AAB8169DE80E0023ABDF /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A9AAB7169DE80E0023ABDF /* PhotoViewController.m */; };
+		89A9AABA169DF8A50023ABDF /* album.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A9AAB9169DF8A50023ABDF /* album.png */; };
+		89A9AABC169DF8AC0023ABDF /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A9AABB169DF8AC0023ABDF /* camera.png */; };
+		89A9AABE169DF8B20023ABDF /* circle_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A9AABD169DF8B20023ABDF /* circle_ok.png */; };
+		89A9AAC0169DF8BA0023ABDF /* circle_remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A9AABF169DF8BA0023ABDF /* circle_remove.png */; };
+		89A9AAC2169DF8C00023ABDF /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A9AAC1169DF8C00023ABDF /* twitter.png */; };
+		89A9AAC4169DF8C50023ABDF /* e-mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A9AAC3169DF8C50023ABDF /* e-mail.png */; };
+		89A9AAC6169DF8CC0023ABDF /* blog.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A9AAC5169DF8CC0023ABDF /* blog.png */; };
+		89A9AAC8169DF8D10023ABDF /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A9AAC7169DF8D10023ABDF /* facebook.png */; };
+		89D0593816ADD85600C59185 /* bgImageGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D0593716ADD85600C59185 /* bgImageGreen.png */; };
+		89D0593A16ADD86200C59185 /* bgImagePurple.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D0593916ADD86200C59185 /* bgImagePurple.png */; };
+		89D0594616ADF36700C59185 /* bg_details.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D0594516ADF36700C59185 /* bg_details.png */; };
+		89D059B716AF1F3000C59185 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D059B616AF1F2F00C59185 /* MediaPlayer.framework */; };
+		89D059BB16AF24D000C59185 /* hermievid01.mov in Resources */ = {isa = PBXBuildFile; fileRef = 89D059BA16AF24D000C59185 /* hermievid01.mov */; };
+		89D05A7B16B04CAE00C59185 /* compress-coconut@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D05A7A16B04CAE00C59185 /* compress-coconut@2x.jpg */; };
+		89D05A7D16B04CF100C59185 /* shells@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D05A7C16B04CF100C59185 /* shells@2x.jpg */; };
+		89D05A7F16B04D1600C59185 /* tank@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D05A7E16B04D1600C59185 /* tank@2x.jpg */; };
+		89D05A8116B04D4100C59185 /* hermit-crab-feeding@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D05A8016B04D4000C59185 /* hermit-crab-feeding@2x.jpg */; };
+		89D05A8316B04D6500C59185 /* hermit-crab-sand@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D05A8216B04D6500C59185 /* hermit-crab-sand@2x.jpg */; };
+		89D05A8516B04E0300C59185 /* swipe-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D05A8416B04E0200C59185 /* swipe-image@2x.png */; };
+		89D05A8716B04E8C00C59185 /* bgImageGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D05A8616B04E8B00C59185 /* bgImageGreen@2x.png */; };
+		89D05A8916B04E9100C59185 /* bgImagePurple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D05A8816B04E9100C59185 /* bgImagePurple@2x.png */; };
+		89D05A8B16B04F8500C59185 /* imgplaceholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D05A8A16B04F8400C59185 /* imgplaceholder@2x.png */; };
+		89D4C22D169739AA00F452BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D4C22C169739AA00F452BE /* UIKit.framework */; };
+		89D4C22F169739AA00F452BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D4C22E169739AA00F452BE /* Foundation.framework */; };
+		89D4C231169739AA00F452BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D4C230169739AA00F452BE /* CoreGraphics.framework */; };
+		89D4C237169739AA00F452BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C235169739AA00F452BE /* InfoPlist.strings */; };
+		89D4C239169739AA00F452BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D4C238169739AA00F452BE /* main.m */; };
+		89D4C23D169739AA00F452BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D4C23C169739AA00F452BE /* AppDelegate.m */; };
+		89D4C246169739AB00F452BE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C244169739AB00F452BE /* MainStoryboard.storyboard */; };
+		89D4C249169739AB00F452BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D4C248169739AB00F452BE /* ViewController.m */; };
+		89D4C25016973BFA00F452BE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C24F16973BFA00F452BE /* Default@2x.png */; };
+		89D4C25216973BFD00F452BE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C25116973BFD00F452BE /* Default.png */; };
+		89D4C2551697401500F452BE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D4C2541697401500F452BE /* DetailViewController.m */; };
+		89D4C25B1697497900F452BE /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D4C25A1697497900F452BE /* AboutViewController.m */; };
+		89D4C25D16974ADF00F452BE /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C25C16974ADF00F452BE /* about.html */; };
+		89D4C26116974C7F00F452BE /* hermit-crab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C26016974C7E00F452BE /* hermit-crab1.png */; };
+		89D4C27216986A4000F452BE /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D4C27116986A4000F452BE /* EmailViewController.m */; };
+		89D4C27516986ACD00F452BE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D4C27416986ACD00F452BE /* MessageUI.framework */; };
+		89D4C2771698744C00F452BE /* carelist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C2761698744C00F452BE /* carelist.plist */; };
+		89D4C28116987C9600F452BE /* hermit-crab-food.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C28016987C9600F452BE /* hermit-crab-food.jpg */; };
+		89D4C28316987CCC00F452BE /* hermit-crab-treats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C28216987CCB00F452BE /* hermit-crab-treats.jpg */; };
+		89D4C28516987CFE00F452BE /* great-hermit-crab-setup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C28416987CFE00F452BE /* great-hermit-crab-setup.jpg */; };
+		89D4C28716987E6C00F452BE /* hermit-crab-bedding.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C28616987E6C00F452BE /* hermit-crab-bedding.jpg */; };
+		89D4C28916987EBB00F452BE /* Hermit_Crab_Shells.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C28816987EBB00F452BE /* Hermit_Crab_Shells.jpg */; };
+		89D4C28B16987F2300F452BE /* hermit-crab-friends.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C28A16987F2300F452BE /* hermit-crab-friends.JPG */; };
+		89D4C28D16987F6F00F452BE /* hermit_crab_handling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D4C28C16987F6E00F452BE /* hermit_crab_handling.jpg */; };
+		89DCB4DD16ADC3B800A7C334 /* SomeFunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB4DC16ADC3B800A7C334 /* SomeFunViewController.m */; };
+		89E67F1516AB2A6B00F173A9 /* google_maps.png in Resources */ = {isa = PBXBuildFile; fileRef = 89E67F1416AB2A6B00F173A9 /* google_maps.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8925F310169880CC005E86CF /* hermit-crab-toys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hermit-crab-toys.jpg"; sourceTree = "<group>"; };
+		8925F31316988105005E86CF /* hermits-2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hermits-2.JPG"; sourceTree = "<group>"; };
+		8925F315169881E7005E86CF /* hermit-crab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hermit-crab.jpg"; sourceTree = "<group>"; };
+		8925F31716989295005E86CF /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		8925F319169892C2005E86CF /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		8925F31B169892EC005E86CF /* umbrella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = umbrella.png; sourceTree = "<group>"; };
+		8925F31D16989330005E86CF /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		8925F31F1698DB9D005E86CF /* lilhermie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lilhermie.png; path = ../lilhermie.png; sourceTree = "<group>"; };
+		894C452C16A876C100E1C716 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		894C452D16A876C100E1C716 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		894C452F16A877E400E1C716 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		894C453116A8851F00E1C716 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		895C5CB216AB252C005BC92E /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		895C5CB316AB252C005BC92E /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		895C5CB516AB253E005BC92E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		895C5CB716AB2551005BC92E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		89A9AA80169DB9750023ABDF /* icon_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_114x114.png; path = ../icon_114x114.png; sourceTree = "<group>"; };
+		89A9AAA8169DDB720023ABDF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		89A9AAB6169DE80E0023ABDF /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		89A9AAB7169DE80E0023ABDF /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		89A9AAB9169DF8A50023ABDF /* album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = album.png; sourceTree = "<group>"; };
+		89A9AABB169DF8AC0023ABDF /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		89A9AABD169DF8B20023ABDF /* circle_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_ok.png; sourceTree = "<group>"; };
+		89A9AABF169DF8BA0023ABDF /* circle_remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_remove.png; sourceTree = "<group>"; };
+		89A9AAC1169DF8C00023ABDF /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		89A9AAC3169DF8C50023ABDF /* e-mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e-mail.png"; sourceTree = "<group>"; };
+		89A9AAC5169DF8CC0023ABDF /* blog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blog.png; sourceTree = "<group>"; };
+		89A9AAC7169DF8D10023ABDF /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		89D0593716ADD85600C59185 /* bgImageGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgImageGreen.png; sourceTree = "<group>"; };
+		89D0593916ADD86200C59185 /* bgImagePurple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgImagePurple.png; sourceTree = "<group>"; };
+		89D0594516ADF36700C59185 /* bg_details.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_details.png; sourceTree = "<group>"; };
+		89D059B616AF1F2F00C59185 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		89D059BA16AF24D000C59185 /* hermievid01.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = hermievid01.mov; sourceTree = "<group>"; };
+		89D05A7A16B04CAE00C59185 /* compress-coconut@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "compress-coconut@2x.jpg"; sourceTree = "<group>"; };
+		89D05A7C16B04CF100C59185 /* shells@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shells@2x.jpg"; sourceTree = "<group>"; };
+		89D05A7E16B04D1600C59185 /* tank@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tank@2x.jpg"; sourceTree = "<group>"; };
+		89D05A8016B04D4000C59185 /* hermit-crab-feeding@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hermit-crab-feeding@2x.jpg"; sourceTree = "<group>"; };
+		89D05A8216B04D6500C59185 /* hermit-crab-sand@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hermit-crab-sand@2x.jpg"; sourceTree = "<group>"; };
+		89D05A8416B04E0200C59185 /* swipe-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe-image@2x.png"; sourceTree = "<group>"; };
+		89D05A8616B04E8B00C59185 /* bgImageGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgImageGreen@2x.png"; sourceTree = "<group>"; };
+		89D05A8816B04E9100C59185 /* bgImagePurple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgImagePurple@2x.png"; sourceTree = "<group>"; };
+		89D05A8A16B04F8400C59185 /* imgplaceholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgplaceholder@2x.png"; sourceTree = "<group>"; };
+		89D4C228169739AA00F452BE /* LilHermie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LilHermie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89D4C22C169739AA00F452BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		89D4C22E169739AA00F452BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		89D4C230169739AA00F452BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		89D4C234169739AA00F452BE /* LilHermie-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LilHermie-Info.plist"; sourceTree = "<group>"; };
+		89D4C236169739AA00F452BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89D4C238169739AA00F452BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89D4C23A169739AA00F452BE /* LilHermie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LilHermie-Prefix.pch"; sourceTree = "<group>"; };
+		89D4C23B169739AA00F452BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		89D4C23C169739AA00F452BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		89D4C245169739AB00F452BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		89D4C247169739AB00F452BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		89D4C248169739AB00F452BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		89D4C24F16973BFA00F452BE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		89D4C25116973BFD00F452BE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		89D4C2531697401500F452BE /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		89D4C2541697401500F452BE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		89D4C2591697497900F452BE /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		89D4C25A1697497900F452BE /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		89D4C25C16974ADF00F452BE /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		89D4C26016974C7E00F452BE /* hermit-crab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hermit-crab1.png"; sourceTree = "<group>"; };
+		89D4C27016986A4000F452BE /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
+		89D4C27116986A4000F452BE /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
+		89D4C27416986ACD00F452BE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		89D4C2761698744C00F452BE /* carelist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = carelist.plist; sourceTree = "<group>"; };
+		89D4C28016987C9600F452BE /* hermit-crab-food.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hermit-crab-food.jpg"; sourceTree = "<group>"; };
+		89D4C28216987CCB00F452BE /* hermit-crab-treats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hermit-crab-treats.jpg"; sourceTree = "<group>"; };
+		89D4C28416987CFE00F452BE /* great-hermit-crab-setup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "great-hermit-crab-setup.jpg"; sourceTree = "<group>"; };
+		89D4C28616987E6C00F452BE /* hermit-crab-bedding.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hermit-crab-bedding.jpg"; sourceTree = "<group>"; };
+		89D4C28816987EBB00F452BE /* Hermit_Crab_Shells.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hermit_Crab_Shells.jpg; sourceTree = "<group>"; };
+		89D4C28A16987F2300F452BE /* hermit-crab-friends.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hermit-crab-friends.JPG"; sourceTree = "<group>"; };
+		89D4C28C16987F6E00F452BE /* hermit_crab_handling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hermit_crab_handling.jpg; sourceTree = "<group>"; };
+		89DCB4DB16ADC3B800A7C334 /* SomeFunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeFunViewController.h; sourceTree = "<group>"; };
+		89DCB4DC16ADC3B800A7C334 /* SomeFunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeFunViewController.m; sourceTree = "<group>"; };
+		89E67F1416AB2A6B00F173A9 /* google_maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google_maps.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89D4C225169739AA00F452BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D059B716AF1F3000C59185 /* MediaPlayer.framework in Frameworks */,
+				895C5CB816AB2551005BC92E /* CoreLocation.framework in Frameworks */,
+				895C5CB616AB253E005BC92E /* MapKit.framework in Frameworks */,
+				894C453016A877E400E1C716 /* Social.framework in Frameworks */,
+				89A9AAA9169DDB720023ABDF /* MobileCoreServices.framework in Frameworks */,
+				89D4C27516986ACD00F452BE /* MessageUI.framework in Frameworks */,
+				89D4C22D169739AA00F452BE /* UIKit.framework in Frameworks */,
+				89D4C22F169739AA00F452BE /* Foundation.framework in Frameworks */,
+				89D4C231169739AA00F452BE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89D4C21D169739AA00F452BE = {
+			isa = PBXGroup;
+			children = (
+				89D4C232169739AA00F452BE /* LilHermie */,
+				89D4C22B169739AA00F452BE /* Frameworks */,
+				89D4C229169739AA00F452BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89D4C229169739AA00F452BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89D4C228169739AA00F452BE /* LilHermie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89D4C22B169739AA00F452BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89D059B616AF1F2F00C59185 /* MediaPlayer.framework */,
+				89A9AAA8169DDB720023ABDF /* MobileCoreServices.framework */,
+				89D4C27416986ACD00F452BE /* MessageUI.framework */,
+				89D4C22C169739AA00F452BE /* UIKit.framework */,
+				89D4C22E169739AA00F452BE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89D4C232169739AA00F452BE /* LilHermie */ = {
+			isa = PBXGroup;
+			children = (
+				89D059BA16AF24D000C59185 /* hermievid01.mov */,
+				89D4C25C16974ADF00F452BE /* about.html */,
+				89D0594516ADF36700C59185 /* bg_details.png */,
+				89D4C23B169739AA00F452BE /* AppDelegate.h */,
+				89D4C23C169739AA00F452BE /* AppDelegate.m */,
+				89D4C244169739AB00F452BE /* MainStoryboard.storyboard */,
+				89D4C247169739AB00F452BE /* ViewController.h */,
+				89D4C248169739AB00F452BE /* ViewController.m */,
+				89D4C2531697401500F452BE /* DetailViewController.h */,
+				89D4C2541697401500F452BE /* DetailViewController.m */,
+				89D4C2591697497900F452BE /* AboutViewController.h */,
+				89D4C25A1697497900F452BE /* AboutViewController.m */,
+				89D4C27016986A4000F452BE /* EmailViewController.h */,
+				89D4C27116986A4000F452BE /* EmailViewController.m */,
+				89D4C2761698744C00F452BE /* carelist.plist */,
+				89A9AAB6169DE80E0023ABDF /* PhotoViewController.h */,
+				89A9AAB7169DE80E0023ABDF /* PhotoViewController.m */,
+				894C452C16A876C100E1C716 /* SocialViewController.h */,
+				894C452D16A876C100E1C716 /* SocialViewController.m */,
+				895C5CB216AB252C005BC92E /* LocationViewController.h */,
+				895C5CB316AB252C005BC92E /* LocationViewController.m */,
+				89DCB4DB16ADC3B800A7C334 /* SomeFunViewController.h */,
+				89DCB4DC16ADC3B800A7C334 /* SomeFunViewController.m */,
+				89D4C233169739AA00F452BE /* Supporting Files */,
+			);
+			path = LilHermie;
+			sourceTree = "<group>";
+		};
+		89D4C233169739AA00F452BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89D4C230169739AA00F452BE /* CoreGraphics.framework */,
+				894C452F16A877E400E1C716 /* Social.framework */,
+				895C5CB516AB253E005BC92E /* MapKit.framework */,
+				89D05A8A16B04F8400C59185 /* imgplaceholder@2x.png */,
+				89D05A8816B04E9100C59185 /* bgImagePurple@2x.png */,
+				89D05A8616B04E8B00C59185 /* bgImageGreen@2x.png */,
+				89D05A8416B04E0200C59185 /* swipe-image@2x.png */,
+				89D05A8016B04D4000C59185 /* hermit-crab-feeding@2x.jpg */,
+				89D05A8216B04D6500C59185 /* hermit-crab-sand@2x.jpg */,
+				89D05A7E16B04D1600C59185 /* tank@2x.jpg */,
+				89D05A7C16B04CF100C59185 /* shells@2x.jpg */,
+				89D05A7A16B04CAE00C59185 /* compress-coconut@2x.jpg */,
+				89D0593916ADD86200C59185 /* bgImagePurple.png */,
+				89D0593716ADD85600C59185 /* bgImageGreen.png */,
+				89E67F1416AB2A6B00F173A9 /* google_maps.png */,
+				894C453116A8851F00E1C716 /* Default-568h@2x.png */,
+				89A9AAB9169DF8A50023ABDF /* album.png */,
+				89A9AABB169DF8AC0023ABDF /* camera.png */,
+				89A9AABD169DF8B20023ABDF /* circle_ok.png */,
+				89A9AAC5169DF8CC0023ABDF /* blog.png */,
+				89A9AAC7169DF8D10023ABDF /* facebook.png */,
+				89A9AAC3169DF8C50023ABDF /* e-mail.png */,
+				895C5CB716AB2551005BC92E /* CoreLocation.framework */,
+				89A9AAC1169DF8C00023ABDF /* twitter.png */,
+				89A9AABF169DF8BA0023ABDF /* circle_remove.png */,
+				89D4C26016974C7E00F452BE /* hermit-crab1.png */,
+				89A9AA80169DB9750023ABDF /* icon_114x114.png */,
+				8925F31F1698DB9D005E86CF /* lilhermie.png */,
+				89D4C25116973BFD00F452BE /* Default.png */,
+				89D4C24F16973BFA00F452BE /* Default@2x.png */,
+				89D4C28016987C9600F452BE /* hermit-crab-food.jpg */,
+				8925F31716989295005E86CF /* email.png */,
+				89D4C28216987CCB00F452BE /* hermit-crab-treats.jpg */,
+				8925F319169892C2005E86CF /* home.png */,
+				89D4C28416987CFE00F452BE /* great-hermit-crab-setup.jpg */,
+				89D4C28616987E6C00F452BE /* hermit-crab-bedding.jpg */,
+				89D4C28816987EBB00F452BE /* Hermit_Crab_Shells.jpg */,
+				8925F31B169892EC005E86CF /* umbrella.png */,
+				89D4C28A16987F2300F452BE /* hermit-crab-friends.JPG */,
+				89D4C28C16987F6E00F452BE /* hermit_crab_handling.jpg */,
+				8925F310169880CC005E86CF /* hermit-crab-toys.jpg */,
+				8925F31316988105005E86CF /* hermits-2.JPG */,
+				8925F31D16989330005E86CF /* info.png */,
+				8925F315169881E7005E86CF /* hermit-crab.jpg */,
+				89D4C234169739AA00F452BE /* LilHermie-Info.plist */,
+				89D4C235169739AA00F452BE /* InfoPlist.strings */,
+				89D4C238169739AA00F452BE /* main.m */,
+				89D4C23A169739AA00F452BE /* LilHermie-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89D4C227169739AA00F452BE /* LilHermie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89D4C24C169739AB00F452BE /* Build configuration list for PBXNativeTarget "LilHermie" */;
+			buildPhases = (
+				89D4C224169739AA00F452BE /* Sources */,
+				89D4C225169739AA00F452BE /* Frameworks */,
+				89D4C226169739AA00F452BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LilHermie;
+			productName = LilHermie;
+			productReference = 89D4C228169739AA00F452BE /* LilHermie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89D4C21F169739AA00F452BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Coder Girl Design";
+			};
+			buildConfigurationList = 89D4C222169739AA00F452BE /* Build configuration list for PBXProject "LilHermie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89D4C21D169739AA00F452BE;
+			productRefGroup = 89D4C229169739AA00F452BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89D4C227169739AA00F452BE /* LilHermie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89D4C226169739AA00F452BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D4C237169739AA00F452BE /* InfoPlist.strings in Resources */,
+				89D4C246169739AB00F452BE /* MainStoryboard.storyboard in Resources */,
+				89D4C25016973BFA00F452BE /* Default@2x.png in Resources */,
+				89D4C25216973BFD00F452BE /* Default.png in Resources */,
+				89D4C25D16974ADF00F452BE /* about.html in Resources */,
+				89D4C26116974C7F00F452BE /* hermit-crab1.png in Resources */,
+				89D4C2771698744C00F452BE /* carelist.plist in Resources */,
+				89D4C28116987C9600F452BE /* hermit-crab-food.jpg in Resources */,
+				89D4C28316987CCC00F452BE /* hermit-crab-treats.jpg in Resources */,
+				89D4C28516987CFE00F452BE /* great-hermit-crab-setup.jpg in Resources */,
+				89D4C28716987E6C00F452BE /* hermit-crab-bedding.jpg in Resources */,
+				89D4C28916987EBB00F452BE /* Hermit_Crab_Shells.jpg in Resources */,
+				89D4C28B16987F2300F452BE /* hermit-crab-friends.JPG in Resources */,
+				89D4C28D16987F6F00F452BE /* hermit_crab_handling.jpg in Resources */,
+				8925F311169880CC005E86CF /* hermit-crab-toys.jpg in Resources */,
+				8925F31416988105005E86CF /* hermits-2.JPG in Resources */,
+				8925F316169881E7005E86CF /* hermit-crab.jpg in Resources */,
+				8925F31816989295005E86CF /* email.png in Resources */,
+				8925F31A169892C2005E86CF /* home.png in Resources */,
+				8925F31C169892EC005E86CF /* umbrella.png in Resources */,
+				8925F31E16989330005E86CF /* info.png in Resources */,
+				8925F3201698DB9D005E86CF /* lilhermie.png in Resources */,
+				89A9AA81169DB9750023ABDF /* icon_114x114.png in Resources */,
+				89A9AABA169DF8A50023ABDF /* album.png in Resources */,
+				89A9AABC169DF8AC0023ABDF /* camera.png in Resources */,
+				89A9AABE169DF8B20023ABDF /* circle_ok.png in Resources */,
+				89A9AAC0169DF8BA0023ABDF /* circle_remove.png in Resources */,
+				89A9AAC2169DF8C00023ABDF /* twitter.png in Resources */,
+				89A9AAC4169DF8C50023ABDF /* e-mail.png in Resources */,
+				89A9AAC6169DF8CC0023ABDF /* blog.png in Resources */,
+				89A9AAC8169DF8D10023ABDF /* facebook.png in Resources */,
+				894C453216A8851F00E1C716 /* Default-568h@2x.png in Resources */,
+				89E67F1516AB2A6B00F173A9 /* google_maps.png in Resources */,
+				89D0593816ADD85600C59185 /* bgImageGreen.png in Resources */,
+				89D0593A16ADD86200C59185 /* bgImagePurple.png in Resources */,
+				89D0594616ADF36700C59185 /* bg_details.png in Resources */,
+				89D059BB16AF24D000C59185 /* hermievid01.mov in Resources */,
+				89D05A7B16B04CAE00C59185 /* compress-coconut@2x.jpg in Resources */,
+				89D05A7D16B04CF100C59185 /* shells@2x.jpg in Resources */,
+				89D05A7F16B04D1600C59185 /* tank@2x.jpg in Resources */,
+				89D05A8116B04D4100C59185 /* hermit-crab-feeding@2x.jpg in Resources */,
+				89D05A8316B04D6500C59185 /* hermit-crab-sand@2x.jpg in Resources */,
+				89D05A8516B04E0300C59185 /* swipe-image@2x.png in Resources */,
+				89D05A8716B04E8C00C59185 /* bgImageGreen@2x.png in Resources */,
+				89D05A8916B04E9100C59185 /* bgImagePurple@2x.png in Resources */,
+				89D05A8B16B04F8500C59185 /* imgplaceholder@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89D4C224169739AA00F452BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D4C239169739AA00F452BE /* main.m in Sources */,
+				89D4C23D169739AA00F452BE /* AppDelegate.m in Sources */,
+				89D4C249169739AB00F452BE /* ViewController.m in Sources */,
+				89D4C2551697401500F452BE /* DetailViewController.m in Sources */,
+				89D4C25B1697497900F452BE /* AboutViewController.m in Sources */,
+				89D4C27216986A4000F452BE /* EmailViewController.m in Sources */,
+				89A9AAB8169DE80E0023ABDF /* PhotoViewController.m in Sources */,
+				894C452E16A876C100E1C716 /* SocialViewController.m in Sources */,
+				895C5CB416AB252C005BC92E /* LocationViewController.m in Sources */,
+				89DCB4DD16ADC3B800A7C334 /* SomeFunViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89D4C235169739AA00F452BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89D4C236169739AA00F452BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89D4C244169739AB00F452BE /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89D4C245169739AB00F452BE /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89D4C24A169739AB00F452BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		89D4C24B169739AB00F452BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89D4C24D169739AB00F452BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LilHermie/LilHermie-Prefix.pch";
+				INFOPLIST_FILE = "LilHermie/LilHermie-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		89D4C24E169739AB00F452BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LilHermie/LilHermie-Prefix.pch";
+				INFOPLIST_FILE = "LilHermie/LilHermie-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89D4C222169739AA00F452BE /* Build configuration list for PBXProject "LilHermie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89D4C24A169739AB00F452BE /* Debug */,
+				89D4C24B169739AB00F452BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89D4C24C169739AB00F452BE /* Build configuration list for PBXNativeTarget "LilHermie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89D4C24D169739AB00F452BE /* Debug */,
+				89D4C24E169739AB00F452BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89D4C21F169739AA00F452BE /* Project object */;
+}

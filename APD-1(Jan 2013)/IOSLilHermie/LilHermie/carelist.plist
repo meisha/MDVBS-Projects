@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CareList</key>
+	<array>
+		<string>Daily Diet</string>
+		<string>Treats</string>
+		<string>Aquarium</string>
+		<string>Bedding</string>
+		<string>Shells</string>
+		<string>Other Hermie&apos;s</string>
+		<string>Handling</string>
+		<string>Toys</string>
+		<string>Aggressiveness</string>
+		<string>Chirping</string>
+		<string>Molting</string>
+		<string>Sexing</string>
+	</array>
+	<key>Thumbnail</key>
+	<array>
+		<string>hermit-crab-food.jpg</string>
+		<string>hermit-crab-treats.jpg</string>
+		<string>great-hermit-crab-setup.jpg</string>
+		<string>hermit-crab-bedding.jpg</string>
+		<string>Hermit_Crab_Shells.jpg</string>
+		<string>hermit-crab-friends.JPG</string>
+		<string>hermit_crab_handling.jpg</string>
+		<string>hermit-crab.jpg</string>
+		<string>hermits-2.JPG</string>
+		<string>hermit-crab.jpg</string>
+		<string>hermit-crab.jpg</string>
+		<string>hermit-crab.jpg</string>
+	</array>
+	<key>Description</key>
+	<array>
+		<string>Hermit Crabs can eat many different things. </string>
+	</array>
+</dict>
+</plist>
