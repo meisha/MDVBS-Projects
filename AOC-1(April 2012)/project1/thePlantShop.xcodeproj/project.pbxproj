@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89169F22152250FF009C0F06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89169F21152250FF009C0F06 /* UIKit.framework */; };
+		89169F24152250FF009C0F06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89169F23152250FF009C0F06 /* Foundation.framework */; };
+		89169F26152250FF009C0F06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89169F25152250FF009C0F06 /* CoreGraphics.framework */; };
+		89169F2C152250FF009C0F06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89169F2A152250FF009C0F06 /* InfoPlist.strings */; };
+		89169F2E152250FF009C0F06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89169F2D152250FF009C0F06 /* main.m */; };
+		89169F32152250FF009C0F06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89169F31152250FF009C0F06 /* AppDelegate.m */; };
+		89169F3A152250FF009C0F06 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89169F39152250FF009C0F06 /* SenTestingKit.framework */; };
+		89169F3B152250FF009C0F06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89169F21152250FF009C0F06 /* UIKit.framework */; };
+		89169F3C152250FF009C0F06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89169F23152250FF009C0F06 /* Foundation.framework */; };
+		89169F44152250FF009C0F06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89169F42152250FF009C0F06 /* InfoPlist.strings */; };
+		89169F47152250FF009C0F06 /* thePlantShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89169F46152250FF009C0F06 /* thePlantShopTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89169F3D152250FF009C0F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89169F14152250FE009C0F06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89169F1C152250FF009C0F06;
+			remoteInfo = thePlantShop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89169F1D152250FF009C0F06 /* thePlantShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thePlantShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89169F21152250FF009C0F06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		89169F23152250FF009C0F06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		89169F25152250FF009C0F06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		89169F29152250FF009C0F06 /* thePlantShop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "thePlantShop-Info.plist"; sourceTree = "<group>"; };
+		89169F2B152250FF009C0F06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89169F2D152250FF009C0F06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89169F2F152250FF009C0F06 /* thePlantShop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "thePlantShop-Prefix.pch"; sourceTree = "<group>"; };
+		89169F30152250FF009C0F06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		89169F31152250FF009C0F06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		89169F38152250FF009C0F06 /* thePlantShopTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thePlantShopTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89169F39152250FF009C0F06 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		89169F41152250FF009C0F06 /* thePlantShopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "thePlantShopTests-Info.plist"; sourceTree = "<group>"; };
+		89169F43152250FF009C0F06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89169F45152250FF009C0F06 /* thePlantShopTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thePlantShopTests.h; sourceTree = "<group>"; };
+		89169F46152250FF009C0F06 /* thePlantShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thePlantShopTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89169F1A152250FF009C0F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89169F22152250FF009C0F06 /* UIKit.framework in Frameworks */,
+				89169F24152250FF009C0F06 /* Foundation.framework in Frameworks */,
+				89169F26152250FF009C0F06 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89169F34152250FF009C0F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89169F3A152250FF009C0F06 /* SenTestingKit.framework in Frameworks */,
+				89169F3B152250FF009C0F06 /* UIKit.framework in Frameworks */,
+				89169F3C152250FF009C0F06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89169F12152250FE009C0F06 = {
+			isa = PBXGroup;
+			children = (
+				89169F27152250FF009C0F06 /* thePlantShop */,
+				89169F3F152250FF009C0F06 /* thePlantShopTests */,
+				89169F20152250FF009C0F06 /* Frameworks */,
+				89169F1E152250FF009C0F06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89169F1E152250FF009C0F06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89169F1D152250FF009C0F06 /* thePlantShop.app */,
+				89169F38152250FF009C0F06 /* thePlantShopTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89169F20152250FF009C0F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89169F21152250FF009C0F06 /* UIKit.framework */,
+				89169F23152250FF009C0F06 /* Foundation.framework */,
+				89169F25152250FF009C0F06 /* CoreGraphics.framework */,
+				89169F39152250FF009C0F06 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89169F27152250FF009C0F06 /* thePlantShop */ = {
+			isa = PBXGroup;
+			children = (
+				89169F30152250FF009C0F06 /* AppDelegate.h */,
+				89169F31152250FF009C0F06 /* AppDelegate.m */,
+				89169F28152250FF009C0F06 /* Supporting Files */,
+			);
+			path = thePlantShop;
+			sourceTree = "<group>";
+		};
+		89169F28152250FF009C0F06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89169F29152250FF009C0F06 /* thePlantShop-Info.plist */,
+				89169F2A152250FF009C0F06 /* InfoPlist.strings */,
+				89169F2D152250FF009C0F06 /* main.m */,
+				89169F2F152250FF009C0F06 /* thePlantShop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89169F3F152250FF009C0F06 /* thePlantShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				89169F45152250FF009C0F06 /* thePlantShopTests.h */,
+				89169F46152250FF009C0F06 /* thePlantShopTests.m */,
+				89169F40152250FF009C0F06 /* Supporting Files */,
+			);
+			path = thePlantShopTests;
+			sourceTree = "<group>";
+		};
+		89169F40152250FF009C0F06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89169F41152250FF009C0F06 /* thePlantShopTests-Info.plist */,
+				89169F42152250FF009C0F06 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89169F1C152250FF009C0F06 /* thePlantShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89169F4A152250FF009C0F06 /* Build configuration list for PBXNativeTarget "thePlantShop" */;
+			buildPhases = (
+				89169F19152250FF009C0F06 /* Sources */,
+				89169F1A152250FF009C0F06 /* Frameworks */,
+				89169F1B152250FF009C0F06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = thePlantShop;
+			productName = thePlantShop;
+			productReference = 89169F1D152250FF009C0F06 /* thePlantShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89169F37152250FF009C0F06 /* thePlantShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89169F4D152250FF009C0F06 /* Build configuration list for PBXNativeTarget "thePlantShopTests" */;
+			buildPhases = (
+				89169F33152250FF009C0F06 /* Sources */,
+				89169F34152250FF009C0F06 /* Frameworks */,
+				89169F35152250FF009C0F06 /* Resources */,
+				89169F36152250FF009C0F06 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89169F3E152250FF009C0F06 /* PBXTargetDependency */,
+			);
+			name = thePlantShopTests;
+			productName = thePlantShopTests;
+			productReference = 89169F38152250FF009C0F06 /* thePlantShopTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89169F14152250FE009C0F06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Blue Jar Studios";
+			};
+			buildConfigurationList = 89169F17152250FE009C0F06 /* Build configuration list for PBXProject "thePlantShop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89169F12152250FE009C0F06;
+			productRefGroup = 89169F1E152250FF009C0F06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89169F1C152250FF009C0F06 /* thePlantShop */,
+				89169F37152250FF009C0F06 /* thePlantShopTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89169F1B152250FF009C0F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89169F2C152250FF009C0F06 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89169F35152250FF009C0F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89169F44152250FF009C0F06 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89169F36152250FF009C0F06 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89169F19152250FF009C0F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89169F2E152250FF009C0F06 /* main.m in Sources */,
+				89169F32152250FF009C0F06 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89169F33152250FF009C0F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89169F47152250FF009C0F06 /* thePlantShopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89169F3E152250FF009C0F06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89169F1C152250FF009C0F06 /* thePlantShop */;
+			targetProxy = 89169F3D152250FF009C0F06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89169F2A152250FF009C0F06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89169F2B152250FF009C0F06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89169F42152250FF009C0F06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89169F43152250FF009C0F06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89169F48152250FF009C0F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89169F49152250FF009C0F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89169F4B152250FF009C0F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "thePlantShop/thePlantShop-Prefix.pch";
+				INFOPLIST_FILE = "thePlantShop/thePlantShop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		89169F4C152250FF009C0F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "thePlantShop/thePlantShop-Prefix.pch";
+				INFOPLIST_FILE = "thePlantShop/thePlantShop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		89169F4E152250FF009C0F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/thePlantShop.app/thePlantShop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "thePlantShop/thePlantShop-Prefix.pch";
+				INFOPLIST_FILE = "thePlantShopTests/thePlantShopTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		89169F4F152250FF009C0F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/thePlantShop.app/thePlantShop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "thePlantShop/thePlantShop-Prefix.pch";
+				INFOPLIST_FILE = "thePlantShopTests/thePlantShopTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89169F17152250FE009C0F06 /* Build configuration list for PBXProject "thePlantShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89169F48152250FF009C0F06 /* Debug */,
+				89169F49152250FF009C0F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89169F4A152250FF009C0F06 /* Build configuration list for PBXNativeTarget "thePlantShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89169F4B152250FF009C0F06 /* Debug */,
+				89169F4C152250FF009C0F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		89169F4D152250FF009C0F06 /* Build configuration list for PBXNativeTarget "thePlantShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89169F4E152250FF009C0F06 /* Debug */,
+				89169F4F152250FF009C0F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89169F14152250FE009C0F06 /* Project object */;
+}
