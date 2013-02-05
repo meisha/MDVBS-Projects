@@ -1,18 +1,8 @@
 <resources>
     
     <integer name="onehour">1</integer>
-    <integer name="twohour">2</integer>
-    <integer name="threehour">3</integer>
-    <integer name="fourhour">4</integer>
-    <integer name="fivehour">5</integer>
-    
-    <integer name="twentyfive">25</integer>
-    <integer name="fifty">50</integer>
-    <integer name="seventyfive">75</integer>
+ 
     <integer name="onedollar">1</integer>
-    <integer name="twodollar">2</integer>
-    <integer name="threedollar">3</integer>
-    <integer name="fourdollar">4</integer>
-    <integer name="fivedollar">5</integer>
+    
     
 </resources>

@@ -17,19 +17,8 @@ public final class R {
         public static final int menu_settings=0x7f070000;
     }
     public static final class integer {
-        public static final int fifty=0x7f030006;
-        public static final int fivedollar=0x7f03000c;
-        public static final int fivehour=0x7f030004;
-        public static final int fourdollar=0x7f03000b;
-        public static final int fourhour=0x7f030003;
-        public static final int onedollar=0x7f030008;
+        public static final int onedollar=0x7f030001;
         public static final int onehour=0x7f030000;
-        public static final int seventyfive=0x7f030007;
-        public static final int threedollar=0x7f03000a;
-        public static final int threehour=0x7f030002;
-        public static final int twentyfive=0x7f030005;
-        public static final int twodollar=0x7f030009;
-        public static final int twohour=0x7f030001;
     }
     public static final class menu {
         public static final int activity_main=0x7f060000;

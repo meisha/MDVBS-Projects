@@ -86,15 +86,14 @@ public class MainActivity extends Activity {
 				// TODO Auto-generated method stub
 				// input hours into the edit text field and convert it to the amount of money saved
 				int onehr = getResources().getInteger(R.integer.onehour);
-				int twohrs = getResources().getInteger(R.integer.twohour);
-				int threehrs = getResources().getInteger(R.integer.threehour);
-				int fourhrs = getResources().getInteger(R.integer.fourhour);
-				int fivehrs = getResources().getInteger(R.integer.fivehour);
 				
+				// String
 				int entry = Integer.parseInt(eText.getText().toString());
 				
+				// Hourly input
 				int num1 = (1/onehr)*entry;
 				
+				// Output
 				savings.setText("Savings: $ "+num1 + "\r\n" );
 			}
 		});
