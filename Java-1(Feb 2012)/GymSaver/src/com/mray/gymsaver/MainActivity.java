@@ -12,6 +12,7 @@ package com.mray.gymsaver;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -38,6 +39,7 @@ public class MainActivity extends Activity {
 	LinearLayout.LayoutParams layParams;
 	EditText eText;
 	TextView tView;
+	TextView savings;
 	
 	
 	@Override
@@ -60,7 +62,7 @@ public class MainActivity extends Activity {
 		linlay.addView(tView);
 		
 		// Edit Text View
-		EditText eText = new EditText(this);
+		eText = new EditText(this);
 		
 		// Adds a hint into the edit text box
 		eText.setHint("How many hours did you work out?");
@@ -77,9 +79,30 @@ public class MainActivity extends Activity {
 		// Sets the width of the button
 		btn.setWidth(150);
 		
+		btn.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				// input hours into the edit text field and convert it to the amount of money saved
+				int onehr = getResources().getInteger(R.integer.onehour);
+				int twohrs = getResources().getInteger(R.integer.twohour);
+				int threehrs = getResources().getInteger(R.integer.threehour);
+				int fourhrs = getResources().getInteger(R.integer.fourhour);
+				int fivehrs = getResources().getInteger(R.integer.fivehour);
+				
+				int entry = Integer.parseInt(eText.getText().toString());
+				
+				int num1 = (1/onehr)*entry;
+				
+				savings.setText("Savings: $ "+num1 + "\r\n" );
+			}
+		});
+		
 		// New Layout
 		LinearLayout form = new LinearLayout(this);
 		form.setOrientation(LinearLayout.HORIZONTAL);
+		layParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 		form.setLayoutParams(layParams);
 		
 		// Adds Edit Text and Button to the view
@@ -89,6 +112,9 @@ public class MainActivity extends Activity {
 		// Adds the new Layout 
 		linlay.addView(form);
 		
+		// Results 
+		savings = new TextView(this);
+		linlay.addView(savings);
 		
 		setContentView(linlay);
 		
