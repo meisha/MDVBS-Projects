@@ -1,10 +1,9 @@
 <resources>
     
     <integer name="onehour">1</integer>
-    <integer name="halfhour">30</integer>
- 
+    
     <integer name="onedollar">1</integer>
-    <integer name="fifty">50</integer>
+    
     
     
     

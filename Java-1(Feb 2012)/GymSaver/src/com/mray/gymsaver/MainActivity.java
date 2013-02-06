@@ -39,8 +39,8 @@ public class MainActivity extends Activity {
 	LinearLayout.LayoutParams layParams;
 	EditText eText;
 	TextView tView;
-	TextView tview1;
 	TextView savings;
+	
 	
 	
 	@Override
@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
 		TextView tView = new TextView(this);
 		
 		// Adds text to the view
-		tView.setText("Did you work out today?");
+		tView.setText("How many hours did you work out today?");
 		
 		// Adds the Text View
 		linlay.addView(tView);
@@ -66,16 +66,16 @@ public class MainActivity extends Activity {
 		eText = new EditText(this);
 		
 		// Adds a hint into the edit text box
-		eText.setHint("How many hours did you work out?");
+		eText.setHint("Hours Worked Out");
 		
 		// Sets the width of the text box
-		eText.setWidth(550);
+		eText.setWidth(370);
 		
 		// Add Button to the view
 		Button btn = new Button(this);
 		
 		// Adds text to the button
-		btn.setText("Add Hours");
+		btn.setText("Add");
 		
 		// Sets the width of the button
 		btn.setWidth(150);
@@ -90,29 +90,41 @@ public class MainActivity extends Activity {
 				// int
 				int onehr = getResources().getInteger(R.integer.onehour);
 				
-				
 				// String
 				int entry = Integer.parseInt(eText.getText().toString());
 				
 				// Hour of workout input
-				int num2 = (1/onehr)*entry;
-				
+				int num1 = (1/onehr)*entry;
 				
 				// Conditional
-				if (num2 >= 1){
-					savings.setText("You worked out over an hour. Your savings is $" +num2 + "\r\n");
+				if (num1 >= 1){
+					savings.setText("You worked out for an hour or more. Your savings for today is $" +num1 + "\r\n");
 				}
-				else if (num2 >= 0){
+				else if (num1 <= 0){
 					savings.setText("You didn't work out over an hour, so your savings for today is $0.00.");
 				}
-				
-				// Output
-				//savings.setText("Savings: $"+num2 + "\r\n" );
 				
 			}
 		});
 		
-		// New Layout
+		// Clear Button
+		Button btnClear = new Button(this);
+		btnClear.setText("Clear");
+		btnClear.setWidth(150);
+		// Create Event Listener for Clear Button
+		btnClear.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				savings.setText("");
+				eText.setText("");
+				
+				
+			}
+		});
+		
+		
+		// New Layout to show the output
 		LinearLayout form = new LinearLayout(this);
 		form.setOrientation(LinearLayout.HORIZONTAL);
 		layParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
@@ -121,11 +133,12 @@ public class MainActivity extends Activity {
 		// Adds Edit Text and Button to the view
 		form.addView(eText);
 		form.addView(btn);
+		form.addView(btnClear);
 		
 		// Adds the new Layout 
 		linlay.addView(form);
 		
-		// Results 
+		// Output 
 		savings = new TextView(this);
 		linlay.addView(savings);
 		

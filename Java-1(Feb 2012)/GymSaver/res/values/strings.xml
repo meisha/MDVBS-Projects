@@ -6,11 +6,8 @@
     <string name="menu_settings">Settings</string>
     <string name="workout_hours">Hours</string>
     <string name="onehr">1</string>
-    <string name="halfhr">.5</string>
-   
-    
+  
     <string name="saving_amounts">Savings</string>
-	<string name="fifty">50</string>
     <string name="one">1</string>
 	
 </resources>
