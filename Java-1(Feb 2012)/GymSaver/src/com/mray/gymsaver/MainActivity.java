@@ -65,11 +65,12 @@ public class MainActivity extends Activity {
 		linlay.addView(tView);
 		
 		// Yes Button
-		Button btnYes = new Button(this);
+		btnYes = new Button(this);
 		btnYes.setText("Yes");
 		btnYes.setWidth(150);
+		
 		// No Button
-		Button btnNo = new Button(this);
+		btnNo = new Button(this);
 		btnNo.setText("No");
 		btnNo.setWidth(150);
 		
@@ -78,14 +79,19 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				
-				if (btnYes == true){
-					btnYes.setText("Congrats!");
-				}
-				else
-					(btnNo == true) {
+//				if (btnYes == true){
+//					btnYes.setText("Congrats!");
+//				}
+//				else {
+//					btnNo.setText("Shame, Shame!");
+//				}
+				if(btnYes==true) {
+					btnYes.setText("Congrats!");	
+				}else {
 					btnNo.setText("Shame, Shame!");
 				}
-			});	
+			}
+		});	
 		
 		
 		
