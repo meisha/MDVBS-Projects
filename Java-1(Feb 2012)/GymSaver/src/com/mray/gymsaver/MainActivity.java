@@ -39,6 +39,7 @@ public class MainActivity extends Activity {
 	LinearLayout.LayoutParams layParams;
 	EditText eText;
 	TextView tView;
+	TextView tview1;
 	TextView savings;
 	
 	
@@ -56,7 +57,7 @@ public class MainActivity extends Activity {
 		TextView tView = new TextView(this);
 		
 		// Adds text to the view
-		tView.setText("Congrats on your workout today!");
+		tView.setText("Did you work out today?");
 		
 		// Adds the Text View
 		linlay.addView(tView);
@@ -79,22 +80,35 @@ public class MainActivity extends Activity {
 		// Sets the width of the button
 		btn.setWidth(150);
 		
+		// Click Event
 		btn.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				// input hours into the edit text field and convert it to the amount of money saved
+				
+				// int
 				int onehr = getResources().getInteger(R.integer.onehour);
+				
 				
 				// String
 				int entry = Integer.parseInt(eText.getText().toString());
 				
-				// Hourly input
-				int num1 = (1/onehr)*entry;
+				// Hour of workout input
+				int num2 = (1/onehr)*entry;
+				
+				
+				// Conditional
+				if (num2 >= 1){
+					savings.setText("You worked out over an hour. Your savings is $" +num2 + "\r\n");
+				}
+				else if (num2 >= 0){
+					savings.setText("You didn't work out over an hour, so your savings for today is $0.00.");
+				}
 				
 				// Output
-				savings.setText("Savings: $ "+num1 + "\r\n" );
+				//savings.setText("Savings: $"+num2 + "\r\n" );
+				
 			}
 		});
 		
