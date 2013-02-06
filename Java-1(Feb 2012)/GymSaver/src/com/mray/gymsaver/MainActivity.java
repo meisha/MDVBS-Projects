@@ -40,9 +40,11 @@ public class MainActivity extends Activity {
 	EditText eText;
 	TextView tView;
 	TextView savings;
+	TextView btnYes;
+	TextView btnNo;
 	
 	
-	
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -57,10 +59,35 @@ public class MainActivity extends Activity {
 		TextView tView = new TextView(this);
 		
 		// Adds text to the view
-		tView.setText("How many hours did you work out today?");
+		tView.setText("Did you work out today?");
 		
 		// Adds the Text View
 		linlay.addView(tView);
+		
+		// Yes Button
+		Button btnYes = new Button(this);
+		btnYes.setText("Yes");
+		btnYes.setWidth(150);
+		// No Button
+		Button btnNo = new Button(this);
+		btnNo.setText("No");
+		btnNo.setWidth(150);
+		
+		btnYes.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				if (btnYes == true){
+					btnYes.setText("Congrats!");
+				}
+				else
+					(btnNo == true) {
+					btnNo.setText("Shame, Shame!");
+				}
+			});	
+		
+		
 		
 		// Edit Text View
 		eText = new EditText(this);
@@ -118,8 +145,6 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				savings.setText("");
 				eText.setText("");
-				
-				
 			}
 		});
 		
@@ -130,10 +155,12 @@ public class MainActivity extends Activity {
 		layParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 		form.setLayoutParams(layParams);
 		
-		// Adds Edit Text and Button to the view
+		// Adds Edit Text and Buttons to the view
 		form.addView(eText);
 		form.addView(btn);
 		form.addView(btnClear);
+		linlay.addView(btnYes);
+		linlay.addView(btnNo);
 		
 		// Adds the new Layout 
 		linlay.addView(form);
