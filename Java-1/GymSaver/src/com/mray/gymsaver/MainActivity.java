@@ -222,6 +222,7 @@ public class MainActivity extends Activity {
 		
 		setContentView(linlay);
 		
+		
 	}
 
 	/* (non-Javadoc)
