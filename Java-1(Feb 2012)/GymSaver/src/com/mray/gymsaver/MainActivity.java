@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
 		btnNo.setWidth(150);
 		
 
-		btnYes.setOnClickListener(new View.OnClickListener() {
+		btnNo.setOnClickListener(new View.OnClickListener() {
 			/*
 			 * (non-Javadoc)
 			 * @see android.view.View.OnClickListener#onClick(android.view.View)
@@ -92,25 +92,23 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 			// Boolean Comparisons
-				if(showResponse == false) {
+				if(showResponse == true) {
 					btnYes.setText("Congrats! Add some funds!");	
 				}else  {
-					btnNo.setText("blah");
-					
+					btnNo.setText("Shame, Shame!");
 				}
 			}
 		});	
 		
-		btnNo.setOnClickListener(new View.OnClickListener() {
+		btnYes.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				if(showResponse == false) {
+				if(showResponse == true) {
 					btnNo.setText("Shame, Shame");
 				} else {
-					btnYes.setText("blah");
+					btnYes.setText("Congrats! Add some funds!");
 				}
-				
 			}
 		});
 		
