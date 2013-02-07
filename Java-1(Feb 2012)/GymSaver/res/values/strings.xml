@@ -9,5 +9,7 @@
   
     <string name="saving_amounts">Savings</string>
     <string name="one">1</string>
+    
+    <string name="hours">5</string>
 	
 </resources>

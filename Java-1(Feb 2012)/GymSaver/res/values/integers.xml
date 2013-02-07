@@ -4,6 +4,8 @@
     
     <integer name="onedollar">1</integer>
     
+    <integer name="hours">5</integer>
+    
     
     
     
