@@ -42,7 +42,6 @@ public class MainActivity extends Activity {
 	TextView savings;
 	Button btnYes;
 	Button btnNo;
-	TextView myBool;
 	boolean showResponse;
 	
 	
@@ -76,22 +75,38 @@ public class MainActivity extends Activity {
 		btnNo.setText("No");
 		btnNo.setWidth(150);
 		
-		 
-		
+
 		btnYes.setOnClickListener(new View.OnClickListener() {
-			
+			/*
+			 * (non-Javadoc)
+			 * @see android.view.View.OnClickListener#onClick(android.view.View)
+			 * 
+			 * When Yes button is clicked the words shame shame show up on the no button. 
+			 * when the No button is pressed the words congrats show up on the yes button.
+			 */
 			@Override
 			public void onClick(View v) {
-//				
-//				if(btnYes == true) {
-//					btnYes.setText("Congrats!");	
-//				}else {
-//					btnNo.setText("Shame, Shame!");
-//				}
+				
+				if(showResponse == true) {
+					btnYes.setText("Congrats!");	
+				}else  {
+					btnNo.setText("Shame, Shame!");
+				}
 			}
 		});	
 		
-		
+		btnNo.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				if(showResponse == true) {
+					btnNo.setText("Shame, Shame!");
+				} else {
+					btnYes.setText("Congrats!");
+				}
+				
+			}
+		});
 		
 		// Edit Text View
 		eText = new EditText(this);
