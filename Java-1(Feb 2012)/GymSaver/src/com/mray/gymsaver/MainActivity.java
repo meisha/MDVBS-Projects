@@ -45,7 +45,6 @@ public class MainActivity extends Activity {
 	boolean showResponse;
 	
 	
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -92,11 +91,12 @@ public class MainActivity extends Activity {
 			 */
 			@Override
 			public void onClick(View v) {
-				
+			// Boolean Comparisons
 				if(showResponse == false) {
 					btnYes.setText("Congrats! Add some funds!");	
 				}else  {
 					btnNo.setText("blah");
+					
 				}
 			}
 		});	
@@ -116,41 +116,33 @@ public class MainActivity extends Activity {
 		
 		// Edit Text View
 		eText = new EditText(this);
-		
-		// Adds a hint into the edit text box
 		eText.setHint("Hours Worked Out");
-		
-		// Sets the width of the text box
 		eText.setWidth(370);
 		
 		// Add Button to the view
 		Button btn = new Button(this);
-		
-		// Adds text to the button
 		btn.setText("Add");
-		
-		// Sets the width of the button
 		btn.setWidth(150);
 		
-		// Click Event
+		// Function
 		btn.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// input hours into the edit text field and convert it to the amount of money saved
 				
-				// int
+				// Resources
 				int onehr = getResources().getInteger(R.integer.onehour);
 				
-				// String
+				
 				int entry = Integer.parseInt(eText.getText().toString());
 				
-				// Hour of workout input
+				// int
 				int num1 = (1/onehr)*entry;
 				
 				// Conditional
 				if (num1 >= 1){
-					savings.setText("You worked out for an hour or more. Your savings for today is $" +num1 + "\r\n");
+					savings.setText("You worked out for an hour or more. Your savings for today is $" +num1 +".00" + "\r\n");
 				}
 				else if (num1 <= 0){
 					savings.setText("You didn't work out over an hour, so your savings for today is $0.00.");
@@ -159,7 +151,10 @@ public class MainActivity extends Activity {
 			}
 		});
 		
-		// Clear Button
+		// Clear Button 
+		/*
+		 * Clears the text box
+		 */
 		Button btnClear = new Button(this);
 		btnClear.setText("Clear");
 		btnClear.setWidth(150);
@@ -172,7 +167,6 @@ public class MainActivity extends Activity {
 				eText.setText("");
 			}
 		});
-		
 		
 		// New Layout to show the output
 		LinearLayout form = new LinearLayout(this);
@@ -190,12 +184,12 @@ public class MainActivity extends Activity {
 		// Adds the new Layout 
 		linlay.addView(form);
 		
-		// Output 
+		// Prints out the Output of the hours into money values 
 		savings = new TextView(this);
 		linlay.addView(savings);
 		
 		setContentView(linlay);
-		
+	
 	}
 
 	/* (non-Javadoc)
