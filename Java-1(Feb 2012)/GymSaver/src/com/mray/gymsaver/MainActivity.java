@@ -83,6 +83,9 @@ public class MainActivity extends Activity {
 			 * 
 			 * When Yes button is clicked the words shame shame show up on the no button. 
 			 * when the No button is pressed the words congrats show up on the yes button.
+			 * Not sure how to reset them yet. Still looking into it. 
+			 * 
+			 * Need to rewrite and get them going in the right direction.
 			 */
 			@Override
 			public void onClick(View v) {
