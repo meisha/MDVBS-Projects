@@ -42,7 +42,6 @@ public class MainActivity extends Activity {
 	TextView savings;
 	Button btnYes;
 	Button btnNo;
-	TextView myBool;
 	boolean showResponse;
 	
 	
@@ -76,8 +75,7 @@ public class MainActivity extends Activity {
 		btnNo.setText("No");
 		btnNo.setWidth(150);
 		
-		 
-		
+
 		btnYes.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -91,7 +89,18 @@ public class MainActivity extends Activity {
 			}
 		});	
 		
-		
+		btnNo.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				if(showResponse == true) {
+					btnNo.setText("Shame, Shame!");
+				} else {
+					btnYes.setText("Congrats!");
+				}
+				
+			}
+		});
 		
 		// Edit Text View
 		eText = new EditText(this);
