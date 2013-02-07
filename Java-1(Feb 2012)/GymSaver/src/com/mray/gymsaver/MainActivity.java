@@ -43,6 +43,10 @@ public class MainActivity extends Activity {
 	Button btnYes;
 	Button btnNo;
 	boolean showResponse;
+	TextView chalText;
+	int num1;
+	int entry;
+	int onehr;
 	
 	
 	@Override
@@ -52,7 +56,7 @@ public class MainActivity extends Activity {
 		// Linear Layout
 		linlay = new LinearLayout(this);
 		linlay.setOrientation(LinearLayout.VERTICAL);
-		layParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+		layParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 		linlay.setLayoutParams(layParams);
 		
 		// Text View
@@ -146,6 +150,21 @@ public class MainActivity extends Activity {
 					savings.setText("You didn't work out over an hour, so your savings for today is $0.00.");
 				}
 				
+				
+				for (int i = 0; i < num1; i++){
+					num1 = (entry);
+					onehr = (entry);
+					chalText.setText("Your Challenge Count Down is" + entry);
+					
+					if (onehr == 0) //if entry was 0 then it posts message
+					{
+						chalText.setText("You should workout more! New Challenge added.");
+						onehr = entry;
+					}else if (onehr >= 0) //this should be if the entry was greater or equal to 1 then good job.
+					{
+						chalText.setText("Good Job! You worked out for " +onehr + " hour(s).");
+					}
+				};
 			}
 		});
 		
@@ -163,6 +182,9 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				savings.setText("");
 				eText.setText("");
+				chalText.setText("");
+				btnYes.setText("Yes");
+				btnNo.setText("No");
 			}
 		});
 		
@@ -179,6 +201,7 @@ public class MainActivity extends Activity {
 		linlay.addView(btnYes);
 		linlay.addView(btnNo);
 		
+		
 		// Adds the new Layout 
 		linlay.addView(form);
 		
@@ -186,8 +209,37 @@ public class MainActivity extends Activity {
 		savings = new TextView(this);
 		linlay.addView(savings);
 		
+		// New Layout for Challenge Display
+		LinearLayout challenge = new LinearLayout(this);
+		challenge.setOrientation(LinearLayout.VERTICAL);
+		layParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+		
+		// Loop			
+		chalText = new TextView(this);
+		int num1 = 5;
+		int onehr = 1;
+		int entry = 5 ;
+//		for (int i = 0; i < num1; i++){
+//			entry = (entry + 1);
+//			entry = (onehr + 1);
+//			chalText.setText("Your Challenge Count Down is" + entry);
+//			
+//			if (entry == 0) //if entry was 0 then it posts message
+//			{
+//				chalText.setText("You should workout more! New Challenge added.");
+//				entry = onehr;
+//			}else if (entry >= 0) //this should be if the entry was greater or equal to 1 then good job.
+//			{
+//				chalText.setText("Good Job! You worked out for " +entry + " hours.");
+//			}
+//		};
+		challenge.addView(chalText);
+		
+		// Add the new layout
+		linlay.addView(challenge);
+		
 		setContentView(linlay);
-	
+		
 	}
 
 	/* (non-Javadoc)
@@ -199,5 +251,4 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
-
 }
