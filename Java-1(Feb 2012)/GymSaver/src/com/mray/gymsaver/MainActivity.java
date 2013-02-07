@@ -85,15 +85,18 @@ public class MainActivity extends Activity {
 			 * when the No button is pressed the words congrats show up on the yes button.
 			 * Not sure how to reset them yet. Still looking into it. 
 			 * 
-			 * Need to rewrite and get them going in the right direction.
+			 * Need to rewrite and get them going in the right direction. 
+			 * 
+			 * This seems to only work if the bool is set to false.
+			 * 
 			 */
 			@Override
 			public void onClick(View v) {
 				
-				if(showResponse == true) {
-					btnYes.setText("Congrats!");	
+				if(showResponse == false) {
+					btnYes.setText("Congrats! Add some funds!");	
 				}else  {
-					btnNo.setText("Shame, Shame!");
+					btnNo.setText("blah");
 				}
 			}
 		});	
@@ -102,10 +105,10 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				if(showResponse == true) {
-					btnNo.setText("Shame, Shame!");
+				if(showResponse == false) {
+					btnNo.setText("Shame, Shame");
 				} else {
-					btnYes.setText("Congrats!");
+					btnYes.setText("blah");
 				}
 				
 			}
