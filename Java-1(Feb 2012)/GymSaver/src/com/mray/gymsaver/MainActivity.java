@@ -86,11 +86,6 @@ public class MainActivity extends Activity {
 			 * 
 			 * When Yes button is clicked the words shame shame show up on the no button. 
 			 * when the No button is pressed the words congrats show up on the yes button.
-			 * Not sure how to reset them yet. Still looking into it. 
-			 * 
-			 * Need to rewrite and get them going in the right direction. 
-			 * 
-			 * This seems to only work if the bool is set to false.
 			 * 
 			 */
 			@Override
@@ -99,7 +94,7 @@ public class MainActivity extends Activity {
 				if(showResponse == true) {
 					btnYes.setText("Congrats! Add some funds!");	
 				}else  {
-					btnNo.setText("Shame, Shame!");
+					btnNo.setText("Shame, Shame Give me 20!");
 				}
 			}
 		});	
@@ -109,7 +104,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				if(showResponse == true) {
-					btnNo.setText("Shame, Shame");
+					btnNo.setText("Shame, Shame Give me 20!");
 				} else {
 					btnYes.setText("Congrats! Add some funds!");
 				}
@@ -154,12 +149,12 @@ public class MainActivity extends Activity {
 				for (int i = 0; i < num1; i++){
 					num1 = (entry);
 					onehr = (entry);
-					chalText.setText("Your Challenge Count Down is" + entry);
+					chalText.setText("Your Challenge Count Down is" + onehr);
 					
-					if (onehr == 0) //if entry was 0 then it posts message
+					if (onehr <= 0) //if entry was 0 then it posts message
 					{
 						chalText.setText("You should workout more! New Challenge added.");
-						onehr = entry;
+
 					}else if (onehr >= 0) //this should be if the entry was greater or equal to 1 then good job.
 					{
 						chalText.setText("Good Job! You worked out for " +onehr + " hour(s).");
