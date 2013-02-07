@@ -82,12 +82,12 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-//				
-//				if(btnYes == true) {
-//					btnYes.setText("Congrats!");	
-//				}else {
-//					btnNo.setText("Shame, Shame!");
-//				}
+				
+				if(showResponse == true) {
+					btnYes.setText("Congrats!");	
+				}else  {
+					btnNo.setText("Shame, Shame!");
+				}
 			}
 		});	
 		
