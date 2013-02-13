@@ -38,8 +38,13 @@ public class MainActivity extends Activity {
 			}
 		});
 		
-		ArrayList<Company>brewery;
-		brewery.add(new Brewery("10 Barrel Brewery", "Bend Oregon"));
+		ArrayList<Company>brewerys;
+		brewery.add(new Brewery("10 Barrel Brewery", "Ben, Oregon"));
+		brewery.add(new Brewery("4 Hands Brewery", "St. Louis, Missouri"));
+		brewery.add(new Brewery("5 Rabbit Cervecer", "Chicago, Illinois"));
+		brewery.add(new Brewery("512 Brewing Company", "Austin, Texas"));
+		brewery.add(new Brewery("Abita Brewing Company", "Abita Springs, Louisiana"));
+		
 		
 		
 		linLay.addView(entryBox);
