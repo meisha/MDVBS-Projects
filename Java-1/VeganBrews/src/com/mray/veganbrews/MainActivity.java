@@ -39,12 +39,11 @@ public class MainActivity extends Activity {
 		});
 		
 		ArrayList<Company>brewerys;
-		brewery.add(new Brewery("10 Barrel Brewery", "Ben, Oregon"));
-		brewery.add(new Brewery("4 Hands Brewery", "St. Louis, Missouri"));
-		brewery.add(new Brewery("5 Rabbit Cervecer", "Chicago, Illinois"));
-		brewery.add(new Brewery("512 Brewing Company", "Austin, Texas"));
-		brewery.add(new Brewery("Abita Brewing Company", "Abita Springs, Louisiana"));
-		
+		brewerys.add(new Brewery("10 Barrel Brewery", "Ben, Oregon"));
+		brewerys.add(new Brewery("4 Hands Brewery", "St. Louis, Missouri"));
+		brewerys.add(new Brewery("5 Rabbit Cervecer", "Chicago, Illinois"));
+		brewerys.add(new Brewery("512 Brewing Company", "Austin, Texas"));
+		brewerys.add(new Brewery("Abita Brewing Company", "Abita Springs, Louisiana"));
 		
 		
 		linLay.addView(entryBox);
