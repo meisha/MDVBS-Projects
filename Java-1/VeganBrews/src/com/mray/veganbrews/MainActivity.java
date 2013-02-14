@@ -29,8 +29,15 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
+				// LOGIC 
 				// Get the tag
 				EditText companyName = (EditText) v.getTag();
+				if(companyName.getText().toString().length() > 0){
+					Log.i("Find It: ", companyName.getText().toString());
+				}else{
+					String userSearch = "Search by State";
+					Log.i("Find It: ", userSearch);
+				}
 				
 				// Is it working?
 				Log.i("BUTTON CLICKED: ", companyName.getText().toString());
@@ -47,7 +54,7 @@ public class MainActivity extends Activity {
 		brewerys.add(new Brewery("512 Brewing Company", "Austin, Texas"));
 		brewerys.add(new Brewery("Abita Brewing Company", "Abita Springs, Louisiana"));
 		
-		//This should bring up the brewery by state once input (not sure though)
+		//This should bring up the brewery by state once input (not sure though, need to do more research)
 		for(Company Company : brewerys){
 			Log.i ("Brewerys by state ", Company.toString());
 		}
