@@ -37,15 +37,20 @@ public class MainActivity extends Activity {
 				
 			}
 		});
-		
-		ArrayList<Company>brewerys;
+		/* Example on pg 132 in the book (Listing 3-39) however it brings
+		 * erros if I attempt it as it is in the book. 
+		 */
+		ArrayList<Company>brewerys = new ArrayList(); //Not sure if that is correct
 		brewerys.add(new Brewery("10 Barrel Brewery", "Ben, Oregon"));
 		brewerys.add(new Brewery("4 Hands Brewery", "St. Louis, Missouri"));
 		brewerys.add(new Brewery("5 Rabbit Cervecer", "Chicago, Illinois"));
 		brewerys.add(new Brewery("512 Brewing Company", "Austin, Texas"));
 		brewerys.add(new Brewery("Abita Brewing Company", "Abita Springs, Louisiana"));
 		
-		
+		//This should bring up the brewery by state once input (not sure though)
+		for(Company Company : brewerys){
+			Log.i ("Brewerys by state ", Company.toString());
+		}
 		linLay.addView(entryBox);
 		
 		setContentView(linLay);
