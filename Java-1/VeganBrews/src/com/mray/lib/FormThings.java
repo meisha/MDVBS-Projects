@@ -5,6 +5,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class FormThings {
 
@@ -36,4 +38,16 @@ public class FormThings {
 		return linLay;
 	}
 
+	//Adds radio buttons to the screen
+	
+	public static RadioGroup getOptions(Context context, String[] options){
+		RadioGroup boxes = new RadioGroup(context);
+		
+		for(int i=0; i<options.length; i++){
+			RadioButton rbtn = new RadioButton(context);
+			rbtn.setText(options[i]);
+			boxes.addView(rbtn);
+		}
+		return boxes;
+	}
 }

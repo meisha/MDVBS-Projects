@@ -12,9 +12,11 @@ import android.app.Activity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RadioGroup;
 
 public class MainActivity extends Activity {
 
@@ -22,8 +24,10 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		LinearLayout linLay = new LinearLayout(this);
-		
-		LinearLayout entryBox = FormThings.singleEntryWithButton(this, "Enter a Vegan Beer Company", "Find It");
+		LayoutParams layPar = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+		linLay.setLayoutParams(layPar);
+		linLay.setOrientation(LinearLayout.VERTICAL);
+		LinearLayout entryBox = FormThings.singleEntryWithButton(this, "Enter a State to find Brewery", "Find It");
 		Button findBtn = (Button) entryBox.findViewById(2);
 		
 		findBtn.setOnClickListener(new View.OnClickListener() {
@@ -54,10 +58,19 @@ public class MainActivity extends Activity {
 		brewerys.add(new Brewery("512 Brewing Company", "Austin, Texas"));
 		brewerys.add(new Brewery("Abita Brewing Company", "Abita Springs, Louisiana"));
 		
-		//This should bring up the brewery by state once input (not sure though, need to do more research)
-		for(Company Company : brewerys){
-			Log.i ("Brewerys by state ", Company.toString());
+		String[] breweryNames = new String[brewerys.size()];
+		for(int i=0; i<brewerys.size(); i++){
+			breweryNames[i] = brewerys.get(i).getName();
 		}
+		RadioGroup brewOptions = FormThings.getOptions(this, breweryNames);
+		
+		linLay.addView(brewOptions);
+		
+		
+		//This should bring up the brewery by state once input (not sure though, need to do more research)
+//		for(Company Company : brewerys){
+//			Log.i ("Brewerys by state ", Company.toString());
+//		}
 		linLay.addView(entryBox);
 		
 		setContentView(linLay);
