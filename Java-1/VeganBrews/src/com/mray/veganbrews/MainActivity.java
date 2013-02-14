@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.mray.brewerys.Brewery;
 import com.mray.brewerys.Company;
+import com.mray.brewerys.States; 
 import com.mray.lib.FormThings;
 
 import android.os.Bundle;
@@ -44,10 +45,9 @@ public class MainActivity extends Activity {
 				
 			}
 		});
-		/* Example on pg 132 in the book (Listing 3-39) however it brings
-		 * erros if I attempt it as it is in the book. 
+		/* Example on pg. 132 in the book (Listing 3-39)  
 		 */
-		ArrayList<Company>brewerys = new ArrayList(); //Not sure if that is correct
+		ArrayList<Company>brewerys = new ArrayList<Company>();
 		brewerys.add(new Brewery("10 Barrel Brewery", "Ben, Oregon"));
 		brewerys.add(new Brewery("4 Hands Brewery", "St. Louis, Missouri"));
 		brewerys.add(new Brewery("5 Rabbit Cervecer", "Chicago, Illinois"));
