@@ -8,7 +8,7 @@ public class Brewery implements Company {
 	
 	public Brewery(String name, String location){
 		setName(name);
-		//setLocation(location);
+		//setLocation(location); //This keeps showing an error not sure why.
 	}
 	
 	@Override
