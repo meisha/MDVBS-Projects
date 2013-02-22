@@ -6,30 +6,38 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 
 public class SearchForm extends LinearLayout{
-	
-	EditText _searchField;
-	Button _searchBtn;
 
+	// global vars
+	EditText _searchField;
+	Button _searchButton;
+	
+	// constructor
 	public SearchForm(Context context, String hint, String buttonText){
 		super(context);
 		
-		LayoutParams  layParm;
-		
+		LayoutParams lp;
 		
 		_searchField = new EditText(context);
-		layParm = new LayoutParams(0, LayoutParams.WRAP_CONTENT, 1.0f);
-		_searchField.setLayoutParams(layParm);
+		lp = new LayoutParams(0, LayoutParams.WRAP_CONTENT, 1.0f);
+		_searchField.setLayoutParams(lp);
 		_searchField.setHint(hint);
 		
-		
-		_searchBtn = new Button(context);
-		_searchBtn.setText(buttonText);
+		_searchButton = new Button(context);
+		_searchButton.setText(buttonText);
 		
 		this.addView(_searchField);
-		this.addView(_searchBtn);
+		this.addView(_searchButton);
 		
+		lp = new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT);
+		this.setLayoutParams(lp);
 		
 	}
-	
+	 
+	public EditText getField(){
+		return _searchField;
+	}
+	public Button getButton(){
+		return _searchButton;
+	}
 
 }

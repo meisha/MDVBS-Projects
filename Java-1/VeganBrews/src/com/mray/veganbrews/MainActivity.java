@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
 	Context _context;
 	LinearLayout _appLayout;
 	SearchForm _search;
+	BreweryDisplay _brewery;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +34,18 @@ public class MainActivity extends Activity {
 		_context = this;
 		_appLayout = new LinearLayout(this);
 		
-		//SearchForm search = new SearchForm(_context, "Find a Vegan Brewery", "Find");
-		_appLayout.addView(search);
+		// Add the brewery display
+		_brewery = new BreweryDisplay(_context);
+		
+		//Adds the view to the main layout
+		_appLayout.addView(_search);
+		_appLayout.addView(_brewery);
+		// Sets orientation
+		_appLayout.setOrientation(LinearLayout.VERTICAL);
+		
+		
 		_search = new SearchForm(_context, "Find a Vegan Brewery", "Find It");
+		
 		//Search Button
 		Button searchBtn = _search.getButton();
 		
@@ -62,7 +72,7 @@ public class MainActivity extends Activity {
 //				}
 //				
 				// Is it working?
-				Log.i("BUTTON CLICKED: ", _search.getField().getText().toString();
+				Log.i("BUTTON CLICKED: ", _search.getField().getText().toString());
 				
 			}
 		});
@@ -82,9 +92,9 @@ public class MainActivity extends Activity {
 		}
 		RadioGroup brewOptions = FormThings.getOptions(this, breweryNames);
 		
-		linLay.addView(brewOptions);
-		
-		linLay.addView(entryBox);
+//		linLay.addView(brewOptions);
+//		
+//		linLay.addView(entryBox);
 		
 		setContentView(_appLayout);
 		
