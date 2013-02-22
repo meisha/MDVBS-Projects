@@ -28,6 +28,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		
 		_context = this;
 		_appLayout = new LinearLayout(this);
 		
