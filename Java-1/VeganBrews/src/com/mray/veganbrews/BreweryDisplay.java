@@ -31,6 +31,16 @@ import android.widget.TextView;
 			detailsLabel.setText("Details:");
 			_details = new TextView(_context);
 			
+			//Adding to view
+			this.addView(breweryLabel);
+			this.addView(_brewery);
+			this.addView(stateLabel);
+			this.addView(_state);
+			this.addView(countryLabel);
+			this.addView(_country);
+			this.addView(detailsLabel);
+			this.addView(_details);
+			
 		}
 
 

@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
 	
 	Context _context;
 	LinearLayout _appLayout;
+	SearchForm _search;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,35 +33,36 @@ public class MainActivity extends Activity {
 		_context = this;
 		_appLayout = new LinearLayout(this);
 		
-		SearchForm search = new SearchForm(_context, "Find a Vegan Brewery", "Find");
+		//SearchForm search = new SearchForm(_context, "Find a Vegan Brewery", "Find");
 		_appLayout.addView(search);
-		
-		
+		_search = new SearchForm(_context, "Find a Vegan Brewery", "Find It");
+		//Search Button
+		Button searchBtn = _search.getButton();
 		
 		// From week 2
-		LinearLayout linLay = new LinearLayout(this);
-		LayoutParams layPar = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
-		linLay.setLayoutParams(layPar);
-		linLay.setOrientation(LinearLayout.VERTICAL);
-		LinearLayout entryBox = FormThings.singleEntryWithButton(this, "Find a Brewery", "Find It");
-		Button findBtn = (Button) entryBox.findViewById(2);
+//		LinearLayout linLay = new LinearLayout(this);
+//		LayoutParams layPar = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+//		linLay.setLayoutParams(layPar);
+//		linLay.setOrientation(LinearLayout.VERTICAL);
+//		LinearLayout entryBox = FormThings.singleEntryWithButton(this, "Find a Brewery", "Find It");
+//		Button findBtn = (Button) entryBox.findViewById(2);
 		
-		findBtn.setOnClickListener(new View.OnClickListener() {
+		searchBtn.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// LOGIC 
 				// Get the tag
-				EditText companyName = (EditText) v.getTag();
-				if(companyName.getText().toString().length() > 0){
-					Log.i("Find It: ", companyName.getText().toString());
-				}else{
-					String userSearch = "Search by State";
-					Log.i("Find It: ", userSearch);
-				}
-				
+//				EditText companyName = (EditText) v.getTag();
+//				if(companyName.getText().toString().length() > 0){
+//					Log.i("Find It: ", companyName.getText().toString());
+//				}else{
+//					String userSearch = "Search by State";
+//					Log.i("Find It: ", userSearch);
+//				}
+//				
 				// Is it working?
-				Log.i("BUTTON CLICKED: ", companyName.getText().toString());
+				Log.i("BUTTON CLICKED: ", _search.getField().getText().toString();
 				
 			}
 		});
