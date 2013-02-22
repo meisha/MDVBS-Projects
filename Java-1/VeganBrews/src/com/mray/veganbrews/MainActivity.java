@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
 	LinearLayout _appLayout;
 	SearchForm _search;
 	BreweryDisplay _brewery;
+	Favorites _favList;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +38,14 @@ public class MainActivity extends Activity {
 		// Add the brewery display
 		_brewery = new BreweryDisplay(_context);
 		
+		// Adds FavList 
+		_favList = new Favorites(_context);
+		
 		//Adds the view to the main layout
 		_appLayout.addView(_search);
 		_appLayout.addView(_brewery);
+		_appLayout.addView(_favList);
+		
 		// Sets orientation
 		_appLayout.setOrientation(LinearLayout.VERTICAL);
 		
@@ -78,19 +84,19 @@ public class MainActivity extends Activity {
 		});
 		/* Example on pg. 132 in the book (Listing 3-39)  
 		 */
-		ArrayList<Company>brewerys = new ArrayList<Company>();
-		brewerys.add(new Brewery("10 Barrel Brewery", "Ben, Oregon"));
-		brewerys.add(new Brewery("4 Hands Brewery", "St. Louis, Missouri"));
-		brewerys.add(new Brewery("5 Rabbit Cervecer", "Chicago, Illinois"));
-		brewerys.add(new Brewery("512 Brewing Company", "Austin, Texas"));
-		brewerys.add(new Brewery("Abita Brewing Company", "Abita Springs, Louisiana"));
-		
-		// Array
-		String[] breweryNames = new String[brewerys.size()];
-		for(int i=0; i<brewerys.size(); i++){
-			breweryNames[i] = brewerys.get(i).getName();
-		}
-		RadioGroup brewOptions = FormThings.getOptions(this, breweryNames);
+//		ArrayList<Company>brewerys = new ArrayList<Company>();
+//		brewerys.add(new Brewery("10 Barrel Brewery", "Ben, Oregon"));
+//		brewerys.add(new Brewery("4 Hands Brewery", "St. Louis, Missouri"));
+//		brewerys.add(new Brewery("5 Rabbit Cervecer", "Chicago, Illinois"));
+//		brewerys.add(new Brewery("512 Brewing Company", "Austin, Texas"));
+//		brewerys.add(new Brewery("Abita Brewing Company", "Abita Springs, Louisiana"));
+//		
+//		// Array
+//		String[] breweryNames = new String[brewerys.size()];
+//		for(int i=0; i<brewerys.size(); i++){
+//			breweryNames[i] = brewerys.get(i).getName();
+//		}
+//		RadioGroup brewOptions = FormThings.getOptions(this, breweryNames);
 		
 //		linLay.addView(brewOptions);
 //		
