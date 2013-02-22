@@ -9,6 +9,7 @@ import com.mray.lib.FormThings;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Context;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -19,10 +20,23 @@ import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 
 public class MainActivity extends Activity {
+	
+	Context _context;
+	LinearLayout _appLayout;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		_context = this;
+		_appLayout = new LinearLayout(this);
+		
+		SearchForm search = new SearchForm(_context, "Find a Vegan Brewery", "Find");
+		_appLayout.addView(search);
+		
+		
+		
+		// From week 2
 		LinearLayout linLay = new LinearLayout(this);
 		LayoutParams layPar = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
 		linLay.setLayoutParams(layPar);
@@ -69,7 +83,7 @@ public class MainActivity extends Activity {
 		
 		linLay.addView(entryBox);
 		
-		setContentView(linLay);
+		setContentView(_appLayout);
 		
 	}
 
