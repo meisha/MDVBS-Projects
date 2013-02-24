@@ -1,5 +1,6 @@
 package com.mray.veganbrews;
 
+import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import com.mray.brewerys.Brewery;
@@ -45,10 +46,7 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				
-				// Is it working?
-				Log.i("Click Handler: ", _search.getField().getText().toString());
-				
+				getBrewery(_search.getField().getText().toString());	
 			}
 		});
 		//Detect Network Connection
@@ -56,8 +54,7 @@ public class MainActivity extends Activity {
 		if(_connected){
 			Log.i("Network Connection", WebStuff.getConnectionType(_context));
 		}
-		
-		// Add the brewery display
+				// Add the brewery display
 				_brewery = new BreweryDisplay(_context);
 				
 				// Adds FavList 
@@ -72,7 +69,6 @@ public class MainActivity extends Activity {
 				_appLayout.setOrientation(LinearLayout.VERTICAL);
 			
 		setContentView(_appLayout);
-		
 	}
 
 	@Override
@@ -81,5 +77,16 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
-
+	
+	private void getBrewery(String brewery){
+		Log.i("Click", brewery);
+		String baseUrl = "http://barnivore.com/search.json?keyword=searchtermsgohere";
+		String barnivore = "";
+		String qs;
+		try{
+			qs = URLEncoder.encode(barnivore, "UTF-8");
+		} catch(Exception e){
+			Log.i("Bad URL", "Encoding problem");
+		}
+	}
 }
