@@ -34,6 +34,7 @@ public class WebStuff {
 			}
 		}
 	}
+	// Get a response from a URL
 	public static String getURLStringResponse(URL url){
 		String response = "";
 		
