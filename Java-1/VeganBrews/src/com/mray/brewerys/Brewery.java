@@ -3,7 +3,7 @@ package com.mray.brewerys;
 public class Brewery implements Company {
 	// Class Vars
 	String name;
-	String location;
+	String description;
 	
 	
 	public Brewery(String name, String location){
@@ -19,8 +19,8 @@ public class Brewery implements Company {
 	}
 
 	@Override
-	public boolean setLocation() {
-		this.location = location;
+	public boolean setDescription() {
+		this.description = description;
 		return true;
 	}
 
@@ -30,8 +30,8 @@ public class Brewery implements Company {
 	}
 
 	@Override
-	public String getLocation() {
-		return this.location;
+	public String getDescription() {
+		return this.description;
 	}
 
 

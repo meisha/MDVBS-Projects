@@ -18,19 +18,19 @@ public class Favorites extends LinearLayout {
 	Button _remove;
 	Spinner _favList;
 	Context _context;
-	ArrayList<String> _brewerys = new ArrayList<String>();
+	ArrayList<String> _brews = new ArrayList<String>();
 	
 	public Favorites(Context context){
 		super(context);
 		_context = context;
 		
 		LayoutParams lp;
-		_brewerys.add("Select a Favorite");
+		_brews.add("Select a Favorite");
 		_favList = new Spinner(_context);
 		lp = new LayoutParams(0, LayoutParams.WRAP_CONTENT, 1.0f);
 		_favList.setLayoutParams(lp);
 		//My Array
-		ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(_context, android.R.layout.simple_spinner_item, _brewerys);
+		ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(_context, android.R.layout.simple_spinner_item, _brews);
 		listAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 		_favList.setAdapter(listAdapter);//sets the listAdapter for list
 		
@@ -63,11 +63,11 @@ public class Favorites extends LinearLayout {
 		this.setLayoutParams(lp);
 	}
 	private void updateFavs(){
-		_brewerys.add("10 Barrel Brewery");
-		_brewerys.add("4 Hands Brewery");
-		_brewerys.add("5 Rabbit Cervecer");
-		_brewerys.add("512 Brewing Company");
-		_brewerys.add("Abita Brewing Company");
+		_brews.add("Year Round");
+		_brews.add("4 Hands Brewery");
+		_brews.add("5 Rabbit Cervecer");
+		_brews.add("512 Brewing Company");
+		_brews.add("Abita Brewing Company");
 	}
 	
 }
