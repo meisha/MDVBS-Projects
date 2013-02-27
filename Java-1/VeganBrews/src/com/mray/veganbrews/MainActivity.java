@@ -79,16 +79,16 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
-	
+	// API URL
 	private void getBrews(String brews){
 		Log.i("CLICK", brews);
 		
-		// URL
-		String baseURL = "http://api.brewerydb.com/v2/beers?key=dc7a7c3340c5ea4c61add87f613468c0&ibu=65";
+		String baseURL = "http://api.brewerydb.com/v2/beers?key=dc7a7c3340c5ea4c61add87f613468c0&ibu=65(" + brews + ")";
 		
 		URL finalURL;
 		try{
 			finalURL = new URL(baseURL);
+			Log.i("MY API", baseURL);
 			BrewRequest bre = new BrewRequest();
 			bre.execute(finalURL);
 			
@@ -127,7 +127,7 @@ public class MainActivity extends Activity {
 			Log.i("URL RESPONSE", result);
 			try{
 			JSONObject json = new JSONObject(result);
-			JSONObject results = json.getJSONObject("query").getJSONObject("results").getJSONObject("name").getJSONObject("description").getJSONObject("state");;
+			JSONObject results = json.getJSONObject("query").getJSONObject("results").getJSONObject("col1").getJSONObject("description").getJSONObject("state");
 			if(results.getString("col1").compareTo("N/A")==0){
 				Toast toast = Toast.makeText(_context, "Brew Not Available", Toast.LENGTH_SHORT);
 				toast.show();
@@ -139,7 +139,7 @@ public class MainActivity extends Activity {
 				BrewStuff.storeStringFile(_context, "temp", results.toString(), true);
 			}
 			}catch(JSONException e){
-			Log.e("JSON", "JSON OBJECT EXCEPTION");
+			Log.e("JSON", "APPARENTLY JSON OBJECT EXCEPTION IS NOT WORKING RIGHT!!!");
 			}
 			
 		}
