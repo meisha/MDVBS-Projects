@@ -80,10 +80,10 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	// API URL
-	private void getBrews(String text){
-		Log.i("CLICK", text);
+	private void getBrews(String brews){
+		Log.i("CLICK", brews);
 		
-		String baseURL = "http://api.brewerydb.com/v2/beers?key=dc7a7c3340c5ea4c61add87f613468c0&ibu=65";
+		String baseURL = "http://api.brewerydb.com/v2/beers?key=dc7a7c3340c5ea4c61add87f613468c0&ibu=65(" + brews + ")";
 		URL finalURL;
 		try{
 			finalURL = new URL(baseURL);
@@ -98,6 +98,7 @@ public class MainActivity extends Activity {
 	}
 	
 	// GETS HISTORY
+	@SuppressWarnings("unchecked")
 	private HashMap<String, String>getHistory(){
 		Object stored = BrewStuff.readObjectFile(_context, "history", false);
 		HashMap<String, String> history;
@@ -109,7 +110,7 @@ public class MainActivity extends Activity {
 		}
 		return history;
 	}
-	
+	// CALLS THE API URL AND UPDATES THE DATA PULLING FROM A REMOTE DATA SOURCE
 	private class BrewRequest extends AsyncTask<URL, Void, String>{
 		@Override
 		protected String doInBackground(URL...urls ){
@@ -125,8 +126,8 @@ public class MainActivity extends Activity {
 			Log.i("URL RESPONSE", result);
 			try{
 			JSONObject json = new JSONObject(result);
-			JSONObject data = json.getJSONObject("id").getJSONObject("name").getJSONObject("description").getJSONObject("abv");//more go here
-			if(data.getString("id").compareTo("N/A")==0){
+			JSONObject data = json.getJSONObject("data").getJSONObject("name").getJSONObject("description").getJSONObject("abv");//more go here
+			if(data.getString("data").compareTo("N/A")==0){
 				Toast toast = Toast.makeText(_context, "Brew Not Available", Toast.LENGTH_SHORT);
 				toast.show();
 			}else {
@@ -137,9 +138,12 @@ public class MainActivity extends Activity {
 				BrewStuff.storeStringFile(_context, "temp", data.toString(), true);
 			}
 			}catch(JSONException e){
-			Log.e("JSON", "APPARENTLY JSON OBJECT EXCEPTION IS NOT WORKING RIGHT!!!" + e.toString());
+			Log.e("JSON", "JSON OBJECT EXCEPTION");
 			}
-			
+		}
+
+		private JSONObject dataObjects(String string) {
+			return null;
 		}
 	}
 }
