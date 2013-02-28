@@ -127,7 +127,7 @@ public class MainActivity extends Activity {
 			try{
 			JSONObject json = new JSONObject(result);
 			JSONObject data = json.getJSONObject("data").getJSONObject("name").getJSONObject("description").getJSONObject("abv");//more go here
-			if(data.getString("data").compareTo("N/A")==0){
+			if(data.getString("id").compareTo("N/A")==0){
 				Toast toast = Toast.makeText(_context, "Brew Not Available", Toast.LENGTH_SHORT);
 				toast.show();
 			}else {
@@ -142,8 +142,8 @@ public class MainActivity extends Activity {
 			}
 		}
 
-		private JSONObject dataObjects(String string) {
-			return null;
-		}
+//		private JSONObject dataObjects(String string) {
+//			return null;
+//		}
 	}
 }
