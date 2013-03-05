@@ -21,7 +21,7 @@ import android.widget.EditText;
  * The Class MainActivity.
  */
 public class MainActivity extends Activity {
-
+	
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onCreate(android.os.Bundle)
 	 */

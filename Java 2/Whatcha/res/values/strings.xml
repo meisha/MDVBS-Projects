@@ -2,12 +2,14 @@
 <resources>
 
     <string name="app_name">Whatcha</string>
-    <string name="edit_message">Enter Your Name</string>
+    <string name="edit_message">Enter Build Name</string>
     <string name="button_send">enter</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_display_message">My Build</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+
+    <string name="save_btn1">Save my Build</string>
+    <string name="whatcha_building">Whatcha Building</string>
 
 </resources>
