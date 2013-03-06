@@ -25,14 +25,10 @@ public final class R {
     }
     public static final class id {
         public static final int TextView2=0x7f080000;
-        public static final int action_settings=0x7f080008;
-        public static final int button1=0x7f080007;
-        public static final int button2=0x7f080001;
-        public static final int call=0x7f080003;
-        public static final int edit_message=0x7f080006;
-        public static final int phone=0x7f080002;
-        public static final int sms=0x7f080004;
-        public static final int textView1=0x7f080005;
+        public static final int action_settings=0x7f080004;
+        public static final int edit_message=0x7f080003;
+        public static final int textView1=0x7f080002;
+        public static final int web_btn=0x7f080001;
     }
     public static final class layout {
         public static final int activity_display_message=0x7f030000;
@@ -55,6 +51,7 @@ public final class R {
         public static final int text1=0x7f050001;
         public static final int title_activity_display_message=0x7f050009;
         public static final int title_main_activty=0x7f050008;
+        public static final int view_btn=0x7f05000d;
         public static final int web_btn=0x7f050007;
     }
     public static final class style {

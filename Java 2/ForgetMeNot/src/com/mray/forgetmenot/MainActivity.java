@@ -38,16 +38,14 @@ public class MainActivity extends Activity implements OnClickListener {
 	 * This button will take the user to the next activity when pressed.
 	 */
 	
+	// Vars
 	Button save_mem;
 	
-	/* (non-Javadoc)
-	 * @see android.app.Activity#onCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		save_mem = (Button) findViewById(R.id.button1);
+		save_mem = (Button) findViewById(R.id.web_btn);
 		save_mem.setOnClickListener(this);
 	}
 	

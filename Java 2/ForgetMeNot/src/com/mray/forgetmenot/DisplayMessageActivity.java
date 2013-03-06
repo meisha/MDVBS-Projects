@@ -14,6 +14,7 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
@@ -25,17 +26,21 @@ import android.provider.ContactsContract;
 /**
  * The Class DisplayMessageActivity.
  */
-public class DisplayMessageActivity extends Activity {
+public class DisplayMessageActivity extends Activity implements OnClickListener {
 	
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onCreate(android.os.Bundle)
 	 */
 	TextView message;
 	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+	
+		// Sets the text view as the activity's layout
 		setContentView(R.layout.activity_display_message);
+		//setContentView(textView);
 		message = (TextView) findViewById(R.id.TextView2);
 		
 		// Gets the memory from the intent
@@ -46,24 +51,13 @@ public class DisplayMessageActivity extends Activity {
 //		TextView textView = new TextView(this);
 //		textView.setTextSize(20);
 //		textView.setText(message);
-		
-		// Sets the text view as the activity's layout
-		//setContentView(textView);
-		
+	
 		// Show the Up button in the action bar.
 		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 		setupActionBar();
 	}
-	// Using the phone to call a friend
-//	public void onClick(View v) {
-//		Intent read1=new Intent();
-//		read1.setAction(android.content.Intent.ACTION_VIEW);
-//		read1.setData(ContactsContract.Contacts.CONTENT_URI);
-//		startActivity(read1);
-//	}
-
 	
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
@@ -103,6 +97,11 @@ public class DisplayMessageActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		
 	}
 
 }
