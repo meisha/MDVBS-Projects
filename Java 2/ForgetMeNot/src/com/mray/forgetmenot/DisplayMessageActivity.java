@@ -13,11 +13,13 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
+import android.provider.ContactsContract;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -28,23 +30,25 @@ public class DisplayMessageActivity extends Activity {
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onCreate(android.os.Bundle)
 	 */
+	TextView message;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_display_message);
+		message = (TextView) findViewById(R.id.TextView2);
 		
 		// Gets the memory from the intent
 		Intent intent = getIntent();
 		String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-		
+
 		// Here we create the Text View
-		TextView textView = new TextView(this);
-		textView.setTextSize(20);
-		textView.setText(message);
+//		TextView textView = new TextView(this);
+//		textView.setTextSize(20);
+//		textView.setText(message);
 		
 		// Sets the text view as the activity's layout
-		setContentView(textView);
-		//setContentView(R.layout.activity_display_message);
+		//setContentView(textView);
 		
 		// Show the Up button in the action bar.
 		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
@@ -52,6 +56,14 @@ public class DisplayMessageActivity extends Activity {
 		}
 		setupActionBar();
 	}
+	// Using the phone to call a friend
+//	public void onClick(View v) {
+//		Intent read1=new Intent();
+//		read1.setAction(android.content.Intent.ACTION_VIEW);
+//		read1.setData(ContactsContract.Contacts.CONTENT_URI);
+//		startActivity(read1);
+//	}
+
 	
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.

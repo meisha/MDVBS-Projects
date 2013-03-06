@@ -9,11 +9,17 @@
     
     <string name="edit_message">Enter your memory</string>
     <string name="save_btn">Save Memory</string>
-    
+    <string name="web_btn">View Memory Help</string>
     
     <string name="title_main_activty">MainActivity</string>
     
     <string name="title_activity_display_message">My Memory</string>
+    
+    <string name="need_to_call_someone_">Need to call someone?</string>
+    
+    <string name="call">" call "</string>
+    
+    <string name="send_sms">Send SMS</string>
     
 
 </resources>
