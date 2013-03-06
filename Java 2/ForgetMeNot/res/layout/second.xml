@@ -10,7 +10,7 @@
              android:id="@+id/TextView01" 
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:text="First value from ActivityOne" />
+             android:text="Enter" />
              
          <EditText 
              android:text="@+id/EditText01" 
@@ -27,7 +27,7 @@
    	     android:id="@+id/TextView02" 
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:text="Second value from ActivityOne" />
+         android:text="Number of Memories" />
    	 
          <EditText 
              android:text="@+id/EditText02" 
@@ -39,5 +39,5 @@
          android:layout_width="wrap_content"
                   android:layout_height="wrap_content" 
                   android:onClick="onClick" 
-                  android:text="Finish ActivityTwo"/>
+                  android:text="Save"/>
 </LinearLayout>

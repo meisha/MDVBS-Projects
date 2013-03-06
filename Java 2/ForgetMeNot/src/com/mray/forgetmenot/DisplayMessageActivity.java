@@ -46,8 +46,8 @@ public class DisplayMessageActivity extends Activity {
 	@Override
 	public void finish() {
 		Intent data = new Intent();
-		data.putExtra("returnKey1", "Returned value from ActivityTwo. ");
-		data.putExtra("returnKey2", "More returned value from ActivityTwo. ");
+		data.putExtra("returnKey1", "" +"Memory Returned. ");
+		data.putExtra("returnKey2", "Memory Number. ");
 		setResult(RESULT_OK, data);
 		super.finish();
 	}
