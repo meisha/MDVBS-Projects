@@ -8,5 +8,6 @@
     <string name="save_btn">Save Memory</string>
     <string name="text1">Enter your Forget Me Not Memory</string>
     <string name="title_main_activty">MainActivity</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
 
 </resources>
