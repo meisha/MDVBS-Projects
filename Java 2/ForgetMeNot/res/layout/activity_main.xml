@@ -10,33 +10,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="234dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/text1" />
-
-     <EditText
-         android:id="@+id/edit_message"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignLeft="@+id/web_btn"
-         android:layout_alignRight="@+id/textView1"
-         android:layout_below="@+id/textView1"
-         android:layout_gravity="center_horizontal"
-         android:layout_marginTop="10dp"
-         android:ems="10"
-         android:hint="@string/edit_message" />
-    
     <Button
-        android:id="@+id/web_btn"
+        android:id="@+id/enterBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/edit_message"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:text="@string/save_btn" />
-   
+        android:layout_marginTop="150dp"
+        android:text="@string/enter_btn" />
+     
 </LinearLayout>

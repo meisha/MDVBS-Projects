@@ -23,5 +23,7 @@
     
     <string name="view_btn">View some Memory Tricks</string>
     
+    <string name="enter_btn">Enter your ForgetMeNot Memory</string>
+    
 
 </resources>

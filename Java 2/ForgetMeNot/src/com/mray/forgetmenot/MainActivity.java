@@ -40,27 +40,16 @@ public class MainActivity extends Activity implements OnClickListener {
 	 */
 	
 	// My Vars
-	Button save_btn, web_btn;
-	TextView textView1;
+	Button enterButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		save_btn = (Button) findViewById(R.id.web_btn);
-		save_btn.setOnClickListener(this);
+		enterButton = (Button) findViewById(R.id.enterBtn);
+		enterButton.setOnClickListener(this);
 	}
-	
-	// Defines the key for the intent
-	public final static String EXTRA_MESSAGE="com.mray.forgetmenot.MESSAGE";
-	
-	public void sendMessage(View view){
-//		Intent intent = new Intent(this, DisplayMessageActivity.class);
-//		EditText editText = (EditText) findViewById(R.id.edit_message);
-//		String message = editText.getText().toString();
-//		intent.putExtra(EXTRA_MESSAGE, message);
-//		startActivity(intent);
-	}
+
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
 	 */
@@ -70,14 +59,11 @@ public class MainActivity extends Activity implements OnClickListener {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	
+	// My Intent when button is clicked it takes the user to the next activity
 	@Override
 	public void onClick(View arg0) {
-		// TODO Auto-generated method stub
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
-		EditText editText = (EditText) findViewById(R.id.edit_message);
-		String message = editText.getText().toString();
-		intent.putExtra(EXTRA_MESSAGE, message);
+		enterButton = (Button) findViewById(R.id.enterBtn);
 		startActivity(intent);
 	}
 
