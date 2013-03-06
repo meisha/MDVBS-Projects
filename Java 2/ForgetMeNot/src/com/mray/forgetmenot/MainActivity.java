@@ -29,8 +29,8 @@ import android.widget.Toast;
  * At some point I'd like to add alerts to remind the user to look at the app
  * to see what they may not be remembering.
  */
-public class MainActivity extends Activity  {
-	private static final int REQUEST_CODE = 10;
+public class MainActivity extends Activity implements OnClickListener {
+	//private static final int REQUEST_CODE = 10;
 
 	/**
 	 * Send message.
@@ -49,18 +49,18 @@ public class MainActivity extends Activity  {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 	    enterButton = (Button) findViewById(R.id.enterBtn);
-		
 	}
 
 	public void onClick(View view){
 		Intent i = new Intent(this, DisplayMessageActivity.class);
+		enterButton = (Button) findViewById(R.id.enterBtn);
 		i.putExtra("memory", "value memory input");
-		startActivityForResult(i, REQUEST_CODE);
+		startActivity(i);
 	}
 	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		if (resultCode == RESULT_OK && requestCode == REQUEST_CODE){
+		if (resultCode == RESULT_OK) {
 			if (data.hasExtra("return")){
 				Toast.makeText(this, data.getExtras().getString("return"),
 						Toast.LENGTH_SHORT).show();
@@ -76,7 +76,7 @@ public class MainActivity extends Activity  {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-//	// My Intent when button is clicked it takes the user to the next activity
+	// My Intent when button is clicked it takes the user to the next activity
 //	@Override
 //	public void onClick(View arg0) {
 //		Intent intent = new Intent(this, DisplayMessageActivity.class);

@@ -27,7 +27,7 @@ import android.provider.ContactsContract;
 /**
  * The Class DisplayMessageActivity.
  */
-public class DisplayMessageActivity extends Activity {
+public class DisplayMessageActivity extends Activity implements OnClickListener {
 	
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onCreate(android.os.Bundle)
@@ -118,6 +118,12 @@ public class DisplayMessageActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	

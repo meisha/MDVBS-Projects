@@ -15,12 +15,6 @@
     
     <string name="title_activity_display_message">My Memory</string>
     
-    <string name="need_to_call_someone_">Need to call someone?</string>
-    
-    <string name="call">" call "</string>
-    
-    <string name="send_sms">Send SMS</string>
-    
     <string name="view_btn">View some Memory Tricks</string>
     
     <string name="enter_btn">Enter your ForgetMeNot Memory</string>
