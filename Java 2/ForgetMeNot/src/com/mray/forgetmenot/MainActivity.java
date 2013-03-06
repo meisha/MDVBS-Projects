@@ -35,7 +35,7 @@ public class MainActivity extends Activity  {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 	}
-
+	// My intent
 	public void onClick(View view) {
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
 		intent.putExtra("Value1", "Value one for ActivityTwo ");
