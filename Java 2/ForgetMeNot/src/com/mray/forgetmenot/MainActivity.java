@@ -18,6 +18,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -28,7 +29,8 @@ import android.widget.TextView;
  * At some point I'd like to add alerts to remind the user to look at the app
  * to see what they may not be remembering.
  */
-public class MainActivity extends Activity implements OnClickListener {
+public class MainActivity extends Activity  {
+	private static final int REQUEST_CODE = 10;
 
 	/**
 	 * Send message.
@@ -46,10 +48,25 @@ public class MainActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		enterButton = (Button) findViewById(R.id.enterBtn);
-		enterButton.setOnClickListener(this);
+	    enterButton = (Button) findViewById(R.id.enterBtn);
+		
 	}
 
+	public void onClick(View view){
+		Intent i = new Intent(this, DisplayMessageActivity.class);
+		i.putExtra("memory", "value memory input");
+		startActivityForResult(i, REQUEST_CODE);
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		if (resultCode == RESULT_OK && requestCode == REQUEST_CODE){
+			if (data.hasExtra("return")){
+				Toast.makeText(this, data.getExtras().getString("return"),
+						Toast.LENGTH_SHORT).show();
+			}
+		}
+	}
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
 	 */
@@ -59,12 +76,12 @@ public class MainActivity extends Activity implements OnClickListener {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	// My Intent when button is clicked it takes the user to the next activity
-	@Override
-	public void onClick(View arg0) {
-		Intent intent = new Intent(this, DisplayMessageActivity.class);
-		enterButton = (Button) findViewById(R.id.enterBtn);
-		startActivity(intent);
-	}
+//	// My Intent when button is clicked it takes the user to the next activity
+//	@Override
+//	public void onClick(View arg0) {
+//		Intent intent = new Intent(this, DisplayMessageActivity.class);
+//		enterButton = (Button) findViewById(R.id.enterBtn);
+//		startActivity(intent);
+//	}
 
 }
