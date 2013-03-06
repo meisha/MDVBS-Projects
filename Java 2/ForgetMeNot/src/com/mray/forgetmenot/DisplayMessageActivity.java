@@ -1,3 +1,12 @@
+/*
+ * project	ForgetMeNot
+ * 
+ * package 	com.mray.forgetmenot
+ * 
+ * @author	Meisha Ray
+ * 
+ * date		Mar 6, 2013
+ */
 package com.mray.forgetmenot;
 
 import android.os.Bundle;
@@ -8,26 +17,40 @@ import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.os.Build;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class DisplayMessageActivity.
+ */
 public class DisplayMessageActivity extends Activity {
-
+	
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onCreate(android.os.Bundle)
+	 */
+	//@SuppressLint("NewAPI")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_display_message);
 		// Show the Up button in the action bar.
+		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+			getActionBar().setDisplayHomeAsUpEnabled(true);
+		}
 		setupActionBar();
 	}
-
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
 	 */
-	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+	@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 	private void setupActionBar() {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
+	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -35,6 +58,9 @@ public class DisplayMessageActivity extends Activity {
 		return true;
 	}
 
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onOptionsItemSelected(android.view.MenuItem)
+	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
