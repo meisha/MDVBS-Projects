@@ -35,6 +35,7 @@ public class MainActivity extends Activity {
 	 * Adding my intent for the save button.
 	 * This button will take the user to the next activity when pressed.
 	 */
+	// Defines the key for the intent
 	public final static String EXTRA_MESSAGE="com.mray.forgetmenot.MESSAGE";
 	
 	public void sendMessage(View view){

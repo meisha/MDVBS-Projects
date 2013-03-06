@@ -13,8 +13,10 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.Build;
 
 // TODO: Auto-generated Javadoc
@@ -26,13 +28,26 @@ public class DisplayMessageActivity extends Activity {
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onCreate(android.os.Bundle)
 	 */
-	//@SuppressLint("NewAPI")
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_display_message);
+		
+		// Gets the memory from the intent
+		Intent intent = getIntent();
+		String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+		
+		// Here we create the Text View
+		TextView textView = new TextView(this);
+		textView.setTextSize(20);
+		textView.setText(message);
+		
+		// Sets the text view as the activity's layout
+		setContentView(textView);
+		//setContentView(R.layout.activity_display_message);
+		
 		// Show the Up button in the action bar.
-		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 		setupActionBar();
@@ -41,9 +56,9 @@ public class DisplayMessageActivity extends Activity {
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
 	 */
-	@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	private void setupActionBar() {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 	}
