@@ -38,7 +38,7 @@ public class MainActivity extends Activity  {
 	// My intent
 	public void onClick(View view) {
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
-		intent.putExtra("Value1", "Memory ");
+		intent.putExtra("Value1", "");
 		intent.putExtra("Value2", 01);
 					// Set REQUEST_CODE to any value to identify the callback
 		startActivityForResult(intent, REQUEST_CODE);

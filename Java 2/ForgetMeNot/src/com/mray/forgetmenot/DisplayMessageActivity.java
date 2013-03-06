@@ -45,7 +45,7 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 			text2.setText(value2+"");
 			
 			myBlog_intent.setOnClickListener(new OnClickListener(){
-			// Implicit Intent Blog Website
+			// Implicit Intent Blog Website  IT IS WORKING... GOES TO WEBSITE
 			@Override
 			public void onClick(View blogs){
 				Uri myURL = Uri.parse("http://dsc.discovery.com/tv-shows/curiosity/topics/10-ways-to-improve-memory.htm");
