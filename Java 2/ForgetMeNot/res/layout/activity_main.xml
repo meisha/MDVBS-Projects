@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,24 +15,26 @@
         android:layout_height="wrap_content"
         android:text="@string/text1" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/edit_message"
-        android:layout_marginTop="14dp"
-        android:text="@string/save_btn" />
-
-    <EditText
+     <EditText
         android:id="@+id/edit_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button1"
         android:layout_alignRight="@+id/textView1"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/edit_message" />
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/edit_message"
+        android:layout_marginTop="10dp"
+        android:text="@string/save_btn"
+        android:onClick="sendMessage" />
 
-</RelativeLayout>
+   
+</LinearLayout>
