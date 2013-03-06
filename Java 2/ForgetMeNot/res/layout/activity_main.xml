@@ -10,11 +10,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <Button
-        android:id="@+id/enterBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="@string/enter_btn" />
+    <TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" 
+                      android:text="ActivityOne. \nPress button for ActivityTwo"
+                      android:minHeight="60dip" 
+                      android:textSize="20sp"/>
      
-</LinearLayout>
+     <Button android:id="@+id/Button01" 
+         android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" 
+                  android:onClick="onClick" 
+                  android:text="Call ActivityTwo"/>
+     
+     <TextView android:id="@+id/textView1" 
+         android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" 
+                      android:text="ActivityTwo results" />
+     
+     <TextView android:id="@+id/textView2" 
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+         android:text="" />
+  </LinearLayout>

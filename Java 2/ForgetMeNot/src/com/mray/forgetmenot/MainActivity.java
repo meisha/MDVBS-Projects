@@ -12,11 +12,7 @@ package com.mray.forgetmenot;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,59 +25,41 @@ import android.widget.Toast;
  * At some point I'd like to add alerts to remind the user to look at the app
  * to see what they may not be remembering.
  */
-public class MainActivity extends Activity implements OnClickListener {
-	//private static final int REQUEST_CODE = 10;
+public class MainActivity extends Activity  {
+	private static final int REQUEST_CODE = 10;
 
-	/**
-	 * Send message.
-	 *
-	 * @param view the view
-	 * 
-	 * Adding my intent for the save button.
-	 * This button will take the user to the next activity when pressed.
-	 */
-	
-	// My Vars
-	Button enterButton;
-	
+	String activityTwoResult = null;
+	TextView tv;
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-	    enterButton = (Button) findViewById(R.id.enterBtn);
 	}
 
-	public void onClick(View view){
-		Intent i = new Intent(this, DisplayMessageActivity.class);
-		enterButton = (Button) findViewById(R.id.enterBtn);
-		i.putExtra("memory", "value memory input");
-		startActivity(i);
+	public void onClick(View view) {
+		Intent intent = new Intent(this, DisplayMessageActivity.class);
+		intent.putExtra("Value1", "Value one for ActivityTwo ");
+		intent.putExtra("Value2", 42);
+					// Set REQUEST_CODE to any value to identify the callback
+		startActivityForResult(intent, REQUEST_CODE);
 	}
-	
+
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		if (resultCode == RESULT_OK) {
-			if (data.hasExtra("return")){
-				Toast.makeText(this, data.getExtras().getString("return"),
+		if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
+			if (data.hasExtra("returnKey1")) {
+				Toast.makeText(this, data.getExtras().getString("returnKey1"),
 						Toast.LENGTH_SHORT).show();
+				activityTwoResult = data.getExtras().getString("returnKey1"); 
 			}
 		}
 	}
-	/* (non-Javadoc)
-	 * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
-	 */
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-	// My Intent when button is clicked it takes the user to the next activity
-//	@Override
-//	public void onClick(View arg0) {
-//		Intent intent = new Intent(this, DisplayMessageActivity.class);
-//		enterButton = (Button) findViewById(R.id.enterBtn);
-//		startActivity(intent);
-//	}
 
+	public void onResume() {
+		super.onResume();
+		
+		if(activityTwoResult==null) return;
+		tv = (TextView) findViewById(R.id.textView2);
+		tv.setText(activityTwoResult);
+	}
 }

@@ -2,22 +2,11 @@
 <resources>
 
     <string name="app_name">Forget Me Not</string>
-    <string name="text1">Enter your Forget Me Not Memory</string>
     <string name="hello_world">Hello World!</string>
-    <string name="message"></string>
     <string name="action_settings">Settings</string>
-    
-    <string name="edit_message">Enter your memory</string>
-    <string name="save_btn">Save Memory</string>
-    <string name="web_btn">View Memory Help</string>
-    
     <string name="title_main_activty">MainActivity</string>
     
-    <string name="title_activity_display_message">My Memory</string>
-    
-    <string name="view_btn">View some Memory Tricks</string>
-    
-    <string name="enter_btn">Enter your ForgetMeNot Memory</string>
+
     
 
 </resources>
