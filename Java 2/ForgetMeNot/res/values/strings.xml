@@ -4,6 +4,7 @@
     <string name="app_name">Forget Me Not</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="edit_message">Enter your memory here</string>
     <string name="save_btn">Save Memory</string>
     <string name="text1">Enter your Forget Me Not Memory</string>
 
