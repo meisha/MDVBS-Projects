@@ -41,11 +41,10 @@ public class DisplayMessageActivity extends Activity {
 			if (extras == null) {
 				return;
 			}
-			String value1 = extras.getString("Value1");
-			int value2 = extras.getInt("Value2");
-			if (value1 != null) {
+			String memory = extras.getString("memory");
+			if (memory != null) {
 				EditText text1 = (EditText) findViewById(R.id.textView1);
-				text1.setText(value1);
+				text1.setText(memory);
 			}
 		}
 
