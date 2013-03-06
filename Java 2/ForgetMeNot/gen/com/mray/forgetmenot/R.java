@@ -31,7 +31,8 @@ public final class R {
         public static final int LinearLayout02=0x7f080006;
         public static final int TextView01=0x7f080000;
         public static final int TextView02=0x7f080007;
-        public static final int action_settings=0x7f080009;
+        public static final int action_settings=0x7f08000a;
+        public static final int button1=0x7f080009;
         public static final int textView1=0x7f080002;
         public static final int textView2=0x7f080003;
     }
@@ -48,6 +49,7 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;
         public static final int title_main_activty=0x7f050003;
+        public static final int view_btn=0x7f050004;
     }
     public static final class style {
         /** 
