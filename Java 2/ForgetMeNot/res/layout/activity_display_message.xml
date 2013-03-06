@@ -24,7 +24,7 @@
          android:layout_gravity="center_horizontal"
          android:layout_marginTop="10dp"
          android:ems="10"
-         android:hint="@string/edit_memory" />
+         android:hint="@string/edit_message" />
     
     <Button
         android:id="@+id/web_btn"

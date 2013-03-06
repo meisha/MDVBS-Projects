@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
@@ -43,10 +44,8 @@ public class DisplayMessageActivity extends Activity {
 			String value1 = extras.getString("Value1");
 			int value2 = extras.getInt("Value2");
 			if (value1 != null) {
-				EditText text1 = (EditText) findViewById(R.id.EditText01);
-				EditText text2 = (EditText) findViewById(R.id.EditText02);
+				EditText text1 = (EditText) findViewById(R.id.textView1);
 				text1.setText(value1);
-				text2.setText(value2+"");
 			}
 		}
 
@@ -122,9 +121,5 @@ public class DisplayMessageActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	@Override
-	public void onClick(View v) {
-		
-	}
-
+	
 }
