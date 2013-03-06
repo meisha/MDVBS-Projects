@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -38,15 +39,16 @@ public class MainActivity extends Activity implements OnClickListener {
 	 * This button will take the user to the next activity when pressed.
 	 */
 	
-	// Vars
-	Button save_mem;
+	// My Vars
+	Button save_btn, web_btn;
+	TextView textView1;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		save_mem = (Button) findViewById(R.id.web_btn);
-		save_mem.setOnClickListener(this);
+		save_btn = (Button) findViewById(R.id.web_btn);
+		save_btn.setOnClickListener(this);
 	}
 	
 	// Defines the key for the intent
