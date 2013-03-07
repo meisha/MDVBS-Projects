@@ -45,6 +45,7 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 			text2.setText(value2+"");
 			
 			myBlog_intent.setOnClickListener(new OnClickListener(){
+				
 			// Implicit Intent Blog Website  IT IS WORKING... GOES TO WEBSITE
 			@Override
 			public void onClick(View blogs){
@@ -59,8 +60,10 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 	public void onClick(View view) {
 		finish();
 	}
-	
-	
+	/* Finish Returns the memory the user input as well as the number of the memory. 
+	 * But looking at it now, I guess the user would have to remember the number of memory 
+	 * that was before the one they just input. LOL back to the drawing board on that one.
+	*/
 	@Override
 	public void finish() {
 		Intent data = new Intent();

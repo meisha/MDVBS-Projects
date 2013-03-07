@@ -40,10 +40,12 @@ public class MainActivity extends Activity  {
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
 		intent.putExtra("Value1", "");
 		intent.putExtra("Value2", 01);
-					// Set REQUEST_CODE to any value to identify the callback
+		
+		// Set REQUEST_CODE to any value to identify the callback
 		startActivityForResult(intent, REQUEST_CODE);
 	}
 
+	// The result & toast
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
