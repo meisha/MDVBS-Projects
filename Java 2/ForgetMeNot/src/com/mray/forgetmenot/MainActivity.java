@@ -25,6 +25,7 @@ import android.widget.Toast;
  * At some point I'd like to add alerts to remind the user to look at the app
  * to see what they may not be remembering.
  */
+
 public class MainActivity extends Activity  {
 	private static final int REQUEST_CODE = 10;
 
