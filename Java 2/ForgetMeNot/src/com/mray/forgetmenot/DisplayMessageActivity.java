@@ -56,7 +56,7 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 			// Implicit Intent Blog Website  IT IS WORKING... GOES TO WEBSITE
 			@Override
 			public void onClick(View blogs){
-				Uri myURL = Uri.parse("http://dsc.discovery.com/tv-shows/curiosity/topics/10-ways-to-improve-memory.htm");
+				Uri myURL = Uri.parse("http://www.rd.com/health/wellness/20-memory-tricks-youll-never-forget/");
 				Intent myBlog_intent = new Intent(Intent.ACTION_VIEW, myURL);
 				startActivity(myBlog_intent);
 			}
@@ -66,19 +66,18 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 	}
 	// Checking to see if network is available.
 	// Works, but returns that there is no network available.
-	
 	private boolean haveNetworkConnection() {
 	    boolean haveConnectedWifi = false;
 	    boolean haveConnectedMobile = false;
 
 	    ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-	    NetworkInfo[] netInfo = cm.getAllNetworkInfo();
-	    for (NetworkInfo ni : netInfo) {
-	        if (ni.getTypeName().equalsIgnoreCase("WIFI"))
-	            if (ni.isConnected())
+	    NetworkInfo[] netCon = cm.getAllNetworkInfo();
+	    for (NetworkInfo nc : netCon) {
+	        if (nc.getTypeName().equalsIgnoreCase("WIFI"))
+	            if (nc.isConnected())
 	                haveConnectedWifi = true;
-	        if (ni.getTypeName().equalsIgnoreCase("MOBILE"))
-	            if (ni.isConnected())
+	        if (nc.getTypeName().equalsIgnoreCase("MOBILE"))
+	            if (nc.isConnected())
 	                haveConnectedMobile = true;
 	    }
 	    return haveConnectedWifi || haveConnectedMobile;
