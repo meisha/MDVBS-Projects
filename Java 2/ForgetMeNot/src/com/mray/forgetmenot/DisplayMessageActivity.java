@@ -53,13 +53,13 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 			//text1.setText(memory);
 			text2.setText(memnum+"");
 			
-			myBlog_intent.setOnClickListener(new OnClickListener(){
-				
 			/* 
+			 * 
 			 * Implicit Intent Blog Website  
 			 * IT IS WORKING... GOES TO WEBSITE
 			 * 
 			 */
+			myBlog_intent.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View blogs){
 				Uri myURL = Uri.parse("http://www.rd.com/health/wellness/20-memory-tricks-youll-never-forget/");
