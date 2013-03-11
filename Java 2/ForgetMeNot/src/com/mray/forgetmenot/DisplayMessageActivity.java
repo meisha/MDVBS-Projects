@@ -71,7 +71,7 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 	}
 	/* 
 	 * Checking to see if network is available.
-	 * Works, but returns that there is no network available.
+	 * IT IS WORKING (hehe helps when the wifi is turned on for the phone).
 	 * 
 	 */
 	private boolean haveNetworkConnection() {
