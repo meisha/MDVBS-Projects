@@ -38,14 +38,16 @@ public class MainActivity extends Activity  {
 	// My intent
 	public void onClick(View view) {
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
-		intent.putExtra("Value1", "");
-		intent.putExtra("Value2", 01);
+		intent.putExtra("Memory", "");
+		intent.putExtra("MemNum", 01);
 		
 		// Set REQUEST_CODE to any value to identify the callback
 		startActivityForResult(intent, REQUEST_CODE);
 	}
 
-	// The result & toast
+	/* 
+	 * The result & toast
+	*/
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {

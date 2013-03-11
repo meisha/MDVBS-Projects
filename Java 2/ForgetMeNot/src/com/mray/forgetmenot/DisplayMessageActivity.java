@@ -43,29 +43,35 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 		Bundle extras = getIntent().getExtras();
 		if (extras == null) return;
 
-		String value1 = extras.getString("Value1");
-		int value2 = extras.getInt("Value2");
-		if (value1 != null ) {
+		String memory = extras.getString("Memory");
+		int memnum = extras.getInt("MemNum");
+		if (memory != null ) {
 			EditText text1 = (EditText) findViewById(R.id.EditText01);
 			EditText text2 = (EditText) findViewById(R.id.EditText02);
-			text1.setText(value1);
-			text2.setText(value2+"");
+			text1.setText(memory);
+			text2.setText(memnum+"");
 			
 			myBlog_intent.setOnClickListener(new OnClickListener(){
 				
-			// Implicit Intent Blog Website  IT IS WORKING... GOES TO WEBSITE
+			/* 
+			 * Implicit Intent Blog Website  
+			 * IT IS WORKING... GOES TO WEBSITE
+			 * 
+			 */
 			@Override
 			public void onClick(View blogs){
 				Uri myURL = Uri.parse("http://www.rd.com/health/wellness/20-memory-tricks-youll-never-forget/");
 				Intent myBlog_intent = new Intent(Intent.ACTION_VIEW, myURL);
 				startActivity(myBlog_intent);
 			}
-		});
-			
+		});	
 	}
 	}
-	// Checking to see if network is available.
-	// Works, but returns that there is no network available.
+	/* 
+	 * Checking to see if network is available.
+	 * Works, but returns that there is no network available.
+	 * 
+	 */
 	private boolean haveNetworkConnection() {
 	    boolean haveConnectedWifi = false;
 	    boolean haveConnectedMobile = false;
@@ -86,9 +92,12 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 	public void onClick(View view) {
 		finish();
 	}
-	/* Finish Returns the memory the user input as well as the number of the memory. 
+	
+	/* 
+	 * Finish Returns the memory the user input as well as the number of the memory. 
 	 * But looking at it now, I guess the user would have to remember the number of memory 
 	 * that was before the one they just input. LOL back to the drawing board on that one.
+	 * 
 	*/
 	@Override
 	public void finish() {
