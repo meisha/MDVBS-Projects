@@ -30,9 +30,10 @@ import android.widget.LinearLayout;
  */
 public class DisplayMessageActivity extends Activity implements OnClickListener {
 	
+	/*
+	 * Global Vars 
+	 */
 	Button myBlog_intent;
-	
-	
 	
 	@Override
 	public void onCreate(Bundle bundle) {
@@ -48,7 +49,8 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 		if (memory != null ) {
 			EditText text1 = (EditText) findViewById(R.id.EditText01);
 			EditText text2 = (EditText) findViewById(R.id.EditText02);
-			text1.setText(memory);
+			text1.getText().toString(); // maybe this goes here.
+			//text1.setText(memory);
 			text2.setText(memnum+"");
 			
 			myBlog_intent.setOnClickListener(new OnClickListener(){
@@ -102,8 +104,8 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 	@Override
 	public void finish() {
 		Intent data = new Intent();
-		data.putExtra("returnKey1", "" +"Memory Returned. ");
-		data.putExtra("returnKey2", "Memory Number. ");
+		data.putExtra("returnMem", "" +"Memory Returned. ");
+		data.putExtra("returnNum", "Memory Number. ");
 		setResult(RESULT_OK, data);
 		super.finish();
 	}

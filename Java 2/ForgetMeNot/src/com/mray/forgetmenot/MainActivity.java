@@ -51,17 +51,16 @@ public class MainActivity extends Activity  {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
-			if (data.hasExtra("returnKey1")) {
-				Toast.makeText(this, data.getExtras().getString("returnKey1"),
+			if (data.hasExtra("returnMem")) {
+				Toast.makeText(this, data.getExtras().getString("returnMem"),
 						Toast.LENGTH_SHORT).show();
-				activityTwoResult = data.getExtras().getString("returnKey1"); 
+				activityTwoResult = data.getExtras().getString("returnNum"); 
 			}
 		}
 	}
 
 	public void onResume() {
 		super.onResume();
-		
 		if(activityTwoResult==null) return;
 		tv = (TextView) findViewById(R.id.textView2);
 		tv.setText(activityTwoResult);
