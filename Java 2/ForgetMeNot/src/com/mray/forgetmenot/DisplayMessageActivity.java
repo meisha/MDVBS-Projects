@@ -11,13 +11,18 @@ package com.mray.forgetmenot;
 
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -26,6 +31,8 @@ import android.widget.EditText;
 public class DisplayMessageActivity extends Activity implements OnClickListener {
 	
 	Button myBlog_intent;
+	
+	
 	
 	@Override
 	public void onCreate(Bundle bundle) {
@@ -54,7 +61,27 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 				startActivity(myBlog_intent);
 			}
 		});
+			
 	}
+	}
+	// Checking to see if network is available.
+	// Works, but returns that there is no network available.
+	
+	private boolean haveNetworkConnection() {
+	    boolean haveConnectedWifi = false;
+	    boolean haveConnectedMobile = false;
+
+	    ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+	    NetworkInfo[] netInfo = cm.getAllNetworkInfo();
+	    for (NetworkInfo ni : netInfo) {
+	        if (ni.getTypeName().equalsIgnoreCase("WIFI"))
+	            if (ni.isConnected())
+	                haveConnectedWifi = true;
+	        if (ni.getTypeName().equalsIgnoreCase("MOBILE"))
+	            if (ni.isConnected())
+	                haveConnectedMobile = true;
+	    }
+	    return haveConnectedWifi || haveConnectedMobile;
 	}
 	
 	public void onClick(View view) {
