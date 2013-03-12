@@ -48,10 +48,10 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 		int memnum = extras.getInt("MemNum");
 		if (memory != null ) {
 			EditText text1 = (EditText) findViewById(R.id.EditText01);
-			EditText text2 = (EditText) findViewById(R.id.EditText02);
+			//EditText text2 = (EditText) findViewById(R.id.EditText02);
 			text1.getText().toString(); // maybe this goes here.
 			//text1.setText(memory);
-			text2.setText(memnum+"");
+			//text2.setText(memnum+"");
 			
 			/* 
 			 * 
@@ -105,7 +105,7 @@ public class DisplayMessageActivity extends Activity implements OnClickListener 
 	public void finish() {
 		Intent data = new Intent();
 		data.putExtra("returnMem", "" +"Memory Returned. ");
-		data.putExtra("returnNum", "Memory Number. ");
+		//data.putExtra("returnNum", "Memory Number. ");
 		setResult(RESULT_OK, data);
 		super.finish();
 	}

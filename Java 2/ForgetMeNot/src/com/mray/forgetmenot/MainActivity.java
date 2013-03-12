@@ -31,6 +31,7 @@ public class MainActivity extends Activity  {
 
 	String activityTwoResult = null;
 	TextView tv;
+	// onCreate
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -59,11 +60,31 @@ public class MainActivity extends Activity  {
 			}
 		}
 	}
-
+	// onStart
+	public void onStart(){
+		super.onStart();
+		
+	}
+	
+	// onResume
 	public void onResume() {
 		super.onResume();
 		if(activityTwoResult==null) return;
 		tv = (TextView) findViewById(R.id.textView2);
 		tv.setText(activityTwoResult);
+	}
+	
+	// onPause
+	public void onPause(){
+		super.onPause();
+	}
+	
+	// onStop
+	public void onStop(){
+		super.onStop();
+	}
+	// onDestroy
+	public void onDestroy(){
+		super.onDestroy();
 	}
 }
