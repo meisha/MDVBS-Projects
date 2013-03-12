@@ -18,18 +18,17 @@
         android:id="@+id/button02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
+        android:layout_alignLeft="@+id/textView02"
+        android:layout_below="@+id/textView02"
         android:text="Enter More Favorite Foods" />
 
     <Button
         android:id="@+id/button03"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button02"
         android:layout_below="@+id/button02"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="15dp"
         android:text="Find Great Recipes" />
 
 </RelativeLayout>

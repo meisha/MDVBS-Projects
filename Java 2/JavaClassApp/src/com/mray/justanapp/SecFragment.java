@@ -23,7 +23,6 @@ public class SecFragment extends Fragment implements OnClickListener {
 TextView foodMessage = (TextView) view.findViewById(R.id.ftextView02);
 		
 		
-		
 		// Button takes user back to the main activity
 		Button enterBtn = (Button) view.findViewById(R.id.fbutton02); // Enter button to go back to the main view
 		enterBtn.setOnClickListener(this);
