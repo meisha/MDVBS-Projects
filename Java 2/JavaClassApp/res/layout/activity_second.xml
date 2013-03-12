@@ -21,7 +21,7 @@
         android:layout_below="@+id/checkBox1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="47dp"
-        android:text="Enter More Foods" />
+        android:text="Enter More Favorite Foods" />
 
     <Button
         android:id="@+id/button03"
