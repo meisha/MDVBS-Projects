@@ -21,10 +21,10 @@ public class SecondAct extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_second);
 		Button myRecipeIntent = (Button) findViewById(R.id.button03); // find recipe button from website
 		
-		TextView message = (TextView) this.findViewById(R.id.textView02);
+		TextView foodMessage = (TextView) this.findViewById(R.id.textView02);
 		
 		Bundle bundle = getIntent().getExtras();
-		message.setText(bundle.getString("message"));
+		foodMessage.setText(bundle.getString("fav food"));
 		
 		// Button takes user back to the main activity
 		Button enterBtn = (Button) this.findViewById(R.id.button02); // Enter button to go back to the main view
