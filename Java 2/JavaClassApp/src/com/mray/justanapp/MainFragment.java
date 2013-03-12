@@ -23,7 +23,7 @@ public class MainFragment extends Fragment implements OnClickListener {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
+		
 		View view = inflater.inflate(R.layout.fragment_main, container);
 		
 		edit = (EditText) view.findViewById(R.id.EditText01);
