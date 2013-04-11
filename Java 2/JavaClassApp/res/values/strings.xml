@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Java Class App</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="favFood">What is your favorite food?</string>
+    <string name="title_activity_second">SecondAct</string>
+    <string name="message01">message</string>
+
+</resources>
